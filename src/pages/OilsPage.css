@@ -1,0 +1,182 @@
+.oils-page {
+  min-height: 100vh;
+  background: #0a0a0a;
+  color: #e0e0e0;
+  font-family: inherit;
+}
+
+.oils-header {
+  background: linear-gradient(135deg, #1a1a1a 0%, #111 100%);
+  border-bottom: 1px solid #2a2a2a;
+  padding: 1.25rem 2rem;
+  padding-top: 5rem;
+  text-align: center;
+  position: relative;
+}
+
+.back-btn {
+  position: absolute;
+  right: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #e63946;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: opacity 0.2s;
+}
+
+.back-btn:hover { opacity: 0.7; }
+
+.oils-header h1 {
+  font-size: 2.5rem;
+  color: #fff;
+  margin: 0.5rem 0;
+}
+
+.oils-header p {
+  color: #888;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.oils-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.oils-note {
+  background: #1e1a10;
+  border: 1px solid #4a3a10;
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  color: #c8a84b;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.oils-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.25rem;
+}
+
+.oil-card {
+  background: #141414;
+  border: 1px solid #2a2a2a;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.oil-card:hover {
+  border-color: #e63946;
+  transform: translateY(-3px);
+}
+
+.oil-card-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.1rem 1.25rem;
+  background: #1a1a1a;
+  border-bottom: 1px solid #2a2a2a;
+}
+
+.oil-icon { font-size: 1.75rem; flex-shrink: 0; }
+
+.oil-card-header h3 {
+  margin: 0 0 0.2rem;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.oil-capacity {
+  font-size: 0.8rem;
+  color: #e63946;
+  font-weight: 600;
+}
+
+.oil-spec,
+.oil-products,
+.oil-mopar {
+  padding: 0.75rem 1.25rem;
+  border-bottom: 1px solid #1e1e1e;
+}
+
+.oil-label {
+  display: block;
+  font-size: 0.72rem;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+}
+
+.oil-spec p {
+  margin: 0;
+  font-size: 0.88rem;
+  color: #ccc;
+  line-height: 1.5;
+}
+
+.oil-products ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.oil-products li {
+  font-size: 0.87rem;
+  color: #ccc;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.oil-products li::before {
+  content: '✓';
+  color: #e63946;
+  font-weight: 700;
+  font-size: 0.8rem;
+  flex-shrink: 0;
+}
+
+.oil-mopar code {
+  font-size: 0.85rem;
+  color: #aaa;
+  background: #1e1e1e;
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  font-family: monospace;
+}
+
+.oil-note-inline {
+  padding: 0.65rem 1.25rem;
+  font-size: 0.8rem;
+  color: #c8a84b;
+  background: #1a1508;
+  line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+  .oils-header h1 { font-size: 1.8rem; }
+
+  .back-btn {
+    position: static;
+    transform: none;
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  .oils-grid { grid-template-columns: 1fr; }
+}

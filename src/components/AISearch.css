@@ -1,0 +1,137 @@
+.ai-section {
+  background: linear-gradient(180deg, #111a0f 0%, #0a1510 100%);
+}
+
+.ai-wrapper {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.ai-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(230,81,0,0.15);
+  border: 1px solid rgba(230,81,0,0.35);
+  color: #ffab76;
+  padding: 5px 14px;
+  border-radius: 100px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.ai-search-box {
+  margin-bottom: 20px;
+}
+
+.ai-search-input {
+  display: flex;
+  align-items: center;
+  background: var(--bg-card);
+  border: 1.5px solid var(--border);
+  border-radius: 14px;
+  overflow: hidden;
+  padding: 6px 6px 6px 12px;
+  gap: 10px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.ai-search-input:focus-within {
+  border-color: var(--green-light);
+  box-shadow: 0 0 0 3px rgba(67,160,71,0.15);
+}
+
+.ai-search-icon {
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.ai-search-input input {
+  flex: 1;
+  background: none;
+  border: none;
+  outline: none;
+  color: var(--text-primary);
+  font-size: 1rem;
+  font-family: inherit;
+  padding: 8px 0;
+}
+
+.ai-search-input input::placeholder {
+  color: var(--text-muted);
+}
+
+.ai-search-btn {
+  background: var(--green);
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  font-family: inherit;
+  transition: background 0.2s;
+  flex-shrink: 0;
+}
+
+.ai-search-btn:hover {
+  background: var(--green-light);
+}
+
+.ai-suggestions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.suggestions-label {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  flex-basis: 100%;
+  margin-bottom: 4px;
+}
+
+.suggestion-chip {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  color: #b0bdb0;
+  padding: 7px 14px;
+  border-radius: 100px;
+  font-size: 0.82rem;
+  font-family: inherit;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+  cursor: pointer;
+}
+
+.suggestion-chip:hover {
+  background: rgba(46,125,50,0.15);
+  border-color: rgba(46,125,50,0.4);
+  color: #c8e6c9;
+}
+
+.ai-notebook-link {
+  display: flex;
+  justify-content: center;
+}
+
+.ai-notebook-link .btn-secondary {
+  display: inline-block;
+  background: rgba(255,255,255,0.06);
+  color: #ccc;
+  padding: 13px 28px;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border: 1px solid rgba(255,255,255,0.12);
+  transition: background 0.2s, color 0.2s;
+}
+
+.ai-notebook-link .btn-secondary:hover {
+  background: rgba(255,255,255,0.1);
+  color: #fff;
+}

@@ -1,0 +1,165 @@
+.biz-page {
+  min-height: 100vh;
+  background: #0a0a0a;
+  color: #e0e0e0;
+  font-family: inherit;
+}
+
+.biz-header {
+  background: linear-gradient(135deg, #1a1a1a 0%, #111 100%);
+  border-bottom: 1px solid #2a2a2a;
+  padding: 1.25rem 2rem;
+  padding-top: 5rem;
+  text-align: center;
+  position: relative;
+}
+
+.back-btn {
+  position: absolute;
+  right: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #e63946;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: opacity 0.2s;
+}
+
+.back-btn:hover { opacity: 0.7; }
+
+.biz-header h1 {
+  font-size: 2.5rem;
+  color: #fff;
+  margin: 0.5rem 0;
+}
+
+.biz-header p {
+  color: #888;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.biz-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  overflow-x: auto;
+}
+
+.biz-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+  direction: rtl;
+  background: #141414;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #2a2a2a;
+}
+
+.biz-table th {
+  background: #1a1a1a;
+  color: #666;
+  font-weight: 600;
+  padding: 0.75rem 1rem;
+  text-align: right;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-bottom: 2px solid #2a2a2a;
+  white-space: nowrap;
+}
+
+.biz-table td {
+  padding: 0.75rem 1rem;
+  border-top: 1px solid #1e1e1e;
+  vertical-align: top;
+}
+
+.biz-table tr:hover td { background: #1a1a1a; }
+
+.num-cell {
+  color: #555;
+  font-weight: 700;
+  width: 2rem;
+  text-align: center;
+}
+
+.name-cell {
+  font-weight: 700;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.type-badge {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.2rem 0.6rem;
+  border-radius: 20px;
+  border: 1px solid;
+  white-space: nowrap;
+}
+
+.loc-cell {
+  color: #aaa;
+  font-size: 0.85rem;
+  min-width: 150px;
+}
+
+.contact-cell {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  min-width: 160px;
+}
+
+.contact-line {
+  color: #ccc;
+  font-size: 0.83rem;
+  white-space: nowrap;
+}
+
+.map-cell { text-align: center; }
+
+.map-btn {
+  display: inline-block;
+  background: #1a2a1a;
+  color: #4caf50;
+  border: 1px solid #2a4a2a;
+  border-radius: 6px;
+  padding: 0.25rem 0.65rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background 0.2s;
+}
+
+.map-btn:hover { background: #243a24; }
+
+.no-map { color: #444; }
+
+.note-cell { min-width: 180px; }
+
+.note-text {
+  font-size: 0.82rem;
+  color: #c8a84b;
+  line-height: 1.5;
+}
+
+.no-note { color: #444; }
+
+@media (max-width: 768px) {
+  .biz-header h1 { font-size: 1.8rem; }
+
+  .back-btn {
+    position: static;
+    transform: none;
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  .biz-container { padding: 1rem 0.5rem; }
+}

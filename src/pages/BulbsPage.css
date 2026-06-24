@@ -1,0 +1,167 @@
+.bulbs-page {
+  min-height: 100vh;
+  background: #0a0a0a;
+  color: #e0e0e0;
+  font-family: inherit;
+}
+
+.bulbs-header {
+  background: linear-gradient(135deg, #1a1a1a 0%, #111 100%);
+  border-bottom: 1px solid #2a2a2a;
+  padding: 1.25rem 2rem;
+  padding-top: 5rem;
+  text-align: center;
+  position: relative;
+}
+
+.back-btn {
+  position: absolute;
+  right: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #e63946;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: opacity 0.2s;
+}
+
+.back-btn:hover { opacity: 0.7; }
+
+.bulbs-header h1 {
+  font-size: 2.5rem;
+  color: #fff;
+  margin: 0.5rem 0;
+}
+
+.bulbs-header p {
+  color: #888;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.bulbs-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+/* Model tabs */
+.model-tabs {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.model-tab {
+  padding: 0.6rem 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #2a2a2a;
+  background: #141414;
+  color: #aaa;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.model-tab:hover {
+  border-color: #e63946;
+  color: #fff;
+}
+
+.model-tab.active {
+  background: #e63946;
+  border-color: #e63946;
+  color: #fff;
+}
+
+/* Sections */
+.bulbs-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.bulbs-section {
+  background: #141414;
+  border: 1px solid #2a2a2a;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.bulbs-section-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+  padding: 0.9rem 1.25rem;
+  background: #1a1a1a;
+  border-bottom: 1px solid #2a2a2a;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.bulbs-table-wrap { overflow-x: auto; }
+
+.bulbs-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  direction: rtl;
+}
+
+.bulbs-table th {
+  background: #1e1e1e;
+  color: #666;
+  font-weight: 600;
+  padding: 0.55rem 1.25rem;
+  text-align: right;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.bulbs-table td {
+  padding: 0.6rem 1.25rem;
+  border-top: 1px solid #1e1e1e;
+  vertical-align: middle;
+}
+
+.bulbs-table tr:hover td { background: #1a1a1a; }
+
+.watt-badge {
+  display: inline-block;
+  background: #e63946;
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.78rem;
+  padding: 0.2rem 0.55rem;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+.spec-code {
+  font-family: monospace;
+  font-size: 0.88rem;
+  color: #aaa;
+  background: #1e1e1e;
+  padding: 0.15rem 0.45rem;
+  border-radius: 4px;
+}
+
+.dim-cell { color: #666; font-size: 0.85rem; }
+
+.location-cell { color: #ccc; }
+
+@media (max-width: 600px) {
+  .bulbs-header h1 { font-size: 1.8rem; }
+
+  .back-btn {
+    position: static;
+    transform: none;
+    display: block;
+    margin-bottom: 1rem;
+  }
+}

@@ -1,0 +1,75 @@
+.database-section {
+  background: #111a0f;
+}
+
+.db-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 18px;
+}
+
+.db-card {
+  display: block;
+  background: var(--bg-card2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px 20px;
+  position: relative;
+  transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+  overflow: hidden;
+}
+
+.db-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(46,125,50,0.07) 0%, transparent 60%);
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.db-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(46,125,50,0.5);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.35);
+}
+
+.db-card:hover::after {
+  opacity: 1;
+}
+
+.db-icon {
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
+.db-card h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #e8f5e9;
+  margin-bottom: 6px;
+}
+
+.db-card p {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+.db-arrow {
+  display: inline-block;
+  font-size: 1.1rem;
+  color: var(--green-light);
+  transition: transform 0.2s;
+}
+
+.db-card:hover .db-arrow {
+  transform: translateX(-4px);
+}
+
+@media (max-width: 480px) {
+  .db-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
