@@ -3,11 +3,11 @@ import { useNavigate } from 'react-router-dom'
 import './Navbar.css'
 
 const links = [
-  { label: 'בית', href: '#hero' },
+  { label: 'בית', href: '/' },
   { label: 'אודות', href: '/about' },
-  { label: 'מאגר מידע', href: '#database' },
-  { label: 'סרטונים', href: '#videos' },
-  { label: 'גלריה', href: '#gallery' },
+  { label: 'מאגר מידע', href: '/info' },
+  { label: 'סרטונים', href: '/videos' },
+  { label: 'גלריה', href: '/gallery' },
 ]
 
 export default function Navbar() {
@@ -24,7 +24,7 @@ export default function Navbar() {
   return (
     <nav className={`navbar${scrolled ? ' scrolled' : ''}`}>
       <div className="nav-container">
-        <a href="#hero" className="nav-logo">
+        <a href="/" className="nav-logo" onClick={(e) => { e.preventDefault(); navigate('/') }}>
           <img src="/Grand-Vitara-Israel-Team-Logo-Vector.svg" alt="לוגו" className="logo-icon" />
           <div className="logo-text">
             <div className="logo-top-row">
@@ -38,11 +38,7 @@ export default function Navbar() {
         <ul className={`nav-links${open ? ' open' : ''}`}>
           {links.map(l => (
             <li key={l.href}>
-              {l.href.startsWith('/') ? (
-                <a href={l.href} onClick={(e) => { e.preventDefault(); navigate(l.href); setOpen(false) }}>{l.label}</a>
-              ) : (
-                <a href={l.href} onClick={() => setOpen(false)}>{l.label}</a>
-              )}
+              <a href={l.href} onClick={(e) => { e.preventDefault(); navigate(l.href); setOpen(false) }}>{l.label}</a>
             </li>
           ))}
           <li>

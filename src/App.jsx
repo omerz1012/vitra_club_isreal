@@ -17,6 +17,8 @@ import ClubBusinessesPage from './pages/ClubBusinessesPage'
 import CouponsPage from './pages/CouponsPage'
 import VideosPage from './pages/VideosPage'
 import AboutPage from './pages/AboutPage'
+import GalleryPage from './pages/GalleryPage'
+import InfoPage from './pages/InfoPage'
 
 function HomePage() {
   return (
@@ -50,6 +52,8 @@ export default function App() {
         <Route path="/information/coupons" element={<CouponsPage />} />
         <Route path="/videos" element={<VideosPage />} />
         <Route path="/about" element={<AboutPage />} />
+        <Route path="/gallery" element={<GalleryPage />} />
+        <Route path="/info" element={<InfoPage />} />
       </Routes>
     </>
   )
