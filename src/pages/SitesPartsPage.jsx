@@ -53,7 +53,6 @@ export default function SitesPartsPage() {
   return (
     <div className="sites-page" dir="rtl">
       <div className="sites-header">
-        <Link to="/" className="back-btn">→ חזרה לדף הבית</Link>
         <h1>🔩 ספקי חלקים</h1>
         <p>אתרי חלקים מומלצים לגרנד ויטרה — מניסיון חברי הקהילה</p>
       </div>

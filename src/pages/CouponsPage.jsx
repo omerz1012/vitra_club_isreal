@@ -56,7 +56,6 @@ export default function CouponsPage() {
   return (
     <div className="coupons-page" dir="rtl">
       <div className="coupons-header">
-        <Link to="/" className="back-btn">→ חזרה לדף הבית</Link>
         <h1>🎟️ קודי קופון</h1>
         <p>הנחות בלעדיות לחברי מועדון גרנד ויטרה ישראל</p>
       </div>

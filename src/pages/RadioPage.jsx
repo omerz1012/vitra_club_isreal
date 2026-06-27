@@ -36,7 +36,6 @@ export default function RadioPage() {
   return (
     <div className="radio-page" dir="rtl">
       <div className="radio-header">
-        <Link to="/" className="back-btn">→ חזרה לדף הבית</Link>
         <h1>📻 תדרי רדיו</h1>
         <p>תדרים לתקשורת בשטח בין נסיעות שיירה — מועדון גרנד ויטרה ישראל</p>
       </div>

@@ -85,7 +85,6 @@ export default function BulbsPage() {
   return (
     <div className="bulbs-page" dir="rtl">
       <div className="bulbs-header">
-        <Link to="/" className="back-btn">→ חזרה לדף הבית</Link>
         <h1>💡 נורות ותאורה</h1>
         <p>מפרט נורות לכל תפקוד ברכב — גרנד ויטרה</p>
       </div>

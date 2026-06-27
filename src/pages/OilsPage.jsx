@@ -65,7 +65,6 @@ export default function OilsPage() {
   return (
     <div className="oils-page" dir="rtl">
       <div className="oils-header">
-        <Link to="/" className="back-btn">→ חזרה לדף הבית</Link>
         <h1>🛢️ מפרט שמנים ונוזלים</h1>
         <p>סוגי שמנים ונוזלים מומלצים לכל מערכת בגרנד ויטרה</p>
       </div>

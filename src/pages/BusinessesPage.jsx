@@ -121,7 +121,6 @@ export default function BusinessesPage() {
   return (
     <div className="biz-page" dir="rtl">
       <div className="biz-header">
-        <Link to="/" className="back-btn">→ חזרה לדף הבית</Link>
         <h1>📋 בתי עסק מומלצים</h1>
         <p>גרז'ים ובתי עסק מומלצים לגרנד ויטרה — מניסיון חברי הקהילה</p>
       </div>
