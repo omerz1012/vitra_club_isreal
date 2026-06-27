@@ -16,6 +16,7 @@ import BusinessesPage from './pages/BusinessesPage'
 import ClubBusinessesPage from './pages/ClubBusinessesPage'
 import CouponsPage from './pages/CouponsPage'
 import VideosPage from './pages/VideosPage'
+import AboutPage from './pages/AboutPage'
 
 function HomePage() {
   return (
@@ -48,6 +49,7 @@ export default function App() {
         <Route path="/information/club-businesses" element={<ClubBusinessesPage />} />
         <Route path="/information/coupons" element={<CouponsPage />} />
         <Route path="/videos" element={<VideosPage />} />
+        <Route path="/about" element={<AboutPage />} />
       </Routes>
     </>
   )

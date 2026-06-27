@@ -1,9 +1,10 @@
 import { useState, useEffect } from 'react'
+import { useNavigate } from 'react-router-dom'
 import './Navbar.css'
 
 const links = [
   { label: 'בית', href: '#hero' },
-  { label: 'אודות', href: '#stats' },
+  { label: 'אודות', href: '/about' },
   { label: 'מאגר מידע', href: '#database' },
   { label: 'סרטונים', href: '#videos' },
   { label: 'גלריה', href: '#gallery' },
@@ -12,6 +13,7 @@ const links = [
 export default function Navbar() {
   const [open, setOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
+  const navigate = useNavigate()
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40)
@@ -36,7 +38,11 @@ export default function Navbar() {
         <ul className={`nav-links${open ? ' open' : ''}`}>
           {links.map(l => (
             <li key={l.href}>
-              <a href={l.href} onClick={() => setOpen(false)}>{l.label}</a>
+              {l.href.startsWith('/') ? (
+                <a href={l.href} onClick={(e) => { e.preventDefault(); navigate(l.href); setOpen(false) }}>{l.label}</a>
+              ) : (
+                <a href={l.href} onClick={() => setOpen(false)}>{l.label}</a>
+              )}
             </li>
           ))}
           <li>
