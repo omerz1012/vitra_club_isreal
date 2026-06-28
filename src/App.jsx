@@ -19,6 +19,7 @@ import VideosPage from './pages/VideosPage'
 import AboutPage from './pages/AboutPage'
 import GalleryPage from './pages/GalleryPage'
 import InfoPage from './pages/InfoPage'
+import TakanonPage from './pages/TakanonPage'
 
 function HomePage() {
   return (
@@ -29,7 +30,7 @@ function HomePage() {
         <InfoDatabase />
         <Videos />
         <Gallery />
-        <Partners />
+        {/* <Partners /> */}
       </main>
       <Footer />
     </>
@@ -54,6 +55,7 @@ export default function App() {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/gallery" element={<GalleryPage />} />
         <Route path="/info" element={<InfoPage />} />
+        <Route path="/takanon" element={<TakanonPage />} />
       </Routes>
     </>
   )

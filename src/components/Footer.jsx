@@ -7,9 +7,9 @@ export default function Footer() {
         <div className="footer-top">
           <div className="footer-brand">
             <div className="footer-logo">
-              <span>🚙</span>
+              <img src="/logo.png" alt="לוגו" style={{height: '48px', width: '48px', objectFit: 'contain', borderRadius: '8px'}} />
               <div>
-                <span className="footer-logo-main">גרנד ויטרה ישראל</span>
+                <span className="footer-logo-main">Suzuki Grand Vitara 4X4 ISRAEL</span>
                 <span className="footer-logo-sub">הקהילה הרשמית מאז 2016</span>
               </div>
             </div>

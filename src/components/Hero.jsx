@@ -29,10 +29,10 @@ export default function Hero() {
         </div>
 
         <div className="hero-platforms">
-          <a href="https://facebook.com" target="_blank" rel="noreferrer" className="platform-pill">
-            <span>📘</span> פייסבוק · 5,383
+          <a href="https://www.facebook.com/share/g/1PKeizgd1F/" target="_blank" rel="noreferrer" className="platform-pill">
+            <span>📘</span> פייסבוק · 6,385
           </a>
-          <a href="https://instagram.com" target="_blank" rel="noreferrer" className="platform-pill">
+          <a href="https://www.instagram.com/gv4x4_israel_team?igsh=aWpyZWJ4czZ2cTA0" target="_blank" rel="noreferrer" className="platform-pill">
             <span>📸</span> אינסטגרם · 1,180
           </a>
           <a href="https://whatsapp.com" target="_blank" rel="noreferrer" className="platform-pill">

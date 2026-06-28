@@ -1,0 +1,60 @@
+.takanon-page {
+  min-height: 100vh;
+  background: #0a0a0a;
+  color: #e0e0e0;
+  font-family: inherit;
+}
+
+.takanon-header {
+  background: linear-gradient(135deg, #1a1a1a 0%, #111 100%);
+  border-bottom: 1px solid #2a2a2a;
+  padding: 1.25rem 2rem;
+  padding-top: 5rem;
+  text-align: center;
+}
+
+.takanon-header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0.5rem 0 0.25rem;
+}
+
+.takanon-subtitle {
+  color: #e63946;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.takanon-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem;
+}
+
+.takanon-section {
+  margin-bottom: 2.5rem;
+}
+
+.takanon-section h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #e63946;
+  margin-bottom: 1rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid #2a2a2a;
+}
+
+.takanon-section ol {
+  padding-right: 1.5rem;
+  padding-left: 0;
+  margin: 0;
+}
+
+.takanon-section li {
+  font-size: 1rem;
+  line-height: 1.85;
+  color: #ccc;
+  margin-bottom: 0.75rem;
+}

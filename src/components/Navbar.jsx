@@ -8,6 +8,7 @@ const links = [
   { label: 'מאגר מידע', href: '/info' },
   { label: 'סרטונים', href: '/videos' },
   { label: 'גלריה', href: '/gallery' },
+  { label: 'תקנון', href: '/takanon' },
 ]
 
 export default function Navbar() {
@@ -25,7 +26,7 @@ export default function Navbar() {
     <nav className={`navbar${scrolled ? ' scrolled' : ''}`}>
       <div className="nav-container">
         <a href="/" className="nav-logo" onClick={(e) => { e.preventDefault(); navigate('/') }}>
-          <img src="/Grand-Vitara-Israel-Team-Logo-Vector.svg" alt="לוגו" className="logo-icon" />
+          <img src="/logo.png" alt="לוגו" className="logo-icon" />
           <div className="logo-text">
             <div className="logo-top-row">
               <span className="logo-badge">מועדון רשמי</span>

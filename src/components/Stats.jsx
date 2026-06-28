@@ -36,10 +36,10 @@ const platforms = [
   {
     icon: '📘',
     name: 'פייסבוק',
-    count: 5383,
+    count: 6383,
     label: 'חברים בקבוצה',
     color: '#1877f2',
-    href: 'https://facebook.com',
+    href: 'https://www.facebook.com/share/g/1PKeizgd1F/',
     cta: 'הצטרפו לקבוצה',
   },
   {
@@ -48,7 +48,7 @@ const platforms = [
     count: 1180,
     label: 'עוקבים',
     color: '#e1306c',
-    href: 'https://instagram.com',
+    href: 'https://www.instagram.com/gv4x4_israel_team?igsh=aWpyZWJ4czZ2cTA0',
     cta: 'עקבו אחרינו',
   },
   {
