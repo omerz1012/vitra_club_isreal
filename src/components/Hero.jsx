@@ -6,7 +6,7 @@ export default function Hero() {
       <div className="hero-bg">
         <div className="hero-overlay" />
         <img
-          src="/hero-vitara.jpg"
+          src="/header.jpeg"
           alt="Grand Vitara off-road"
           className="hero-img"
         />

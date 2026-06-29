@@ -16,16 +16,6 @@ export default function Footer() {
             <p>מאגר המידע המקיף ביותר לבעלי גרנד ויטרה בישראל — תחזוקה, שטח וקהילה.</p>
           </div>
 
-          <div className="footer-links">
-            <h4>ניווט מהיר</h4>
-            <ul>
-              <li><a href="#hero">בית</a></li>
-              <li><a href="#stats">אודות</a></li>
-              <li><a href="#database">מאגר מידע</a></li>
-              <li><a href="#ai">חיפוש AI</a></li>
-              <li><a href="#videos">סרטונים</a></li>
-            </ul>
-          </div>
 
           <div className="footer-social">
             <h4>עקבו אחרינו</h4>
