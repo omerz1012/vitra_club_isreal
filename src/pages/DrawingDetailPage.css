@@ -1,0 +1,169 @@
+.drawing-detail-page {
+  min-height: 100vh;
+  background: #0a0a0a;
+  color: #e0e0e0;
+  font-family: inherit;
+}
+
+.drawing-detail-header {
+  background: linear-gradient(135deg, #1a1a1a 0%, #111 100%);
+  border-bottom: 1px solid #2a2a2a;
+  padding: 1.25rem 2rem;
+  padding-top: 5rem;
+  text-align: center;
+}
+
+.drawing-detail-header h1 {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0.5rem 0;
+}
+
+.drawing-detail-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
+
+.drawing-detail-placeholder {
+  color: #666;
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.drawing-detail-image-wrap {
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #2a2a2a;
+}
+
+.drawing-detail-image {
+  width: 100%;
+  max-height: 420px;
+  object-fit: contain;
+  display: block;
+  background: #f5f5f5;
+}
+
+.drawing-detail-table-wrap {
+  overflow-x: auto;
+}
+
+.parts-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  direction: ltr;
+}
+
+.parts-table thead {
+  background: #1a1a1a;
+}
+
+.parts-table th {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  color: #888;
+  font-weight: 600;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid #2a2a2a;
+}
+
+.parts-table td {
+  padding: 0.65rem 1rem;
+  border-bottom: 1px solid #1e1e1e;
+  color: #ccc;
+  vertical-align: middle;
+}
+
+.parts-table tbody tr:hover {
+  background: #161616;
+}
+
+.part-number-link {
+  color: #e63946;
+  text-decoration: none;
+  font-family: monospace;
+  font-size: 0.88rem;
+  font-weight: 600;
+  transition: opacity 0.2s;
+}
+
+.part-number-link:hover {
+  opacity: 0.75;
+  text-decoration: underline;
+}
+
+.part-ref {
+  color: #666;
+  font-size: 0.82rem;
+}
+
+.part-qty {
+  color: #fff;
+  font-weight: 600;
+}
+
+.part-en {
+  color: #888;
+  font-size: 0.82rem;
+}
+
+.part-note {
+  color: #c8a84b;
+  font-size: 0.82rem;
+}
+
+.drawing-detail-section-title {
+  margin-bottom: 1rem;
+}
+
+.drawing-detail-ext-link {
+  display: inline-block;
+  color: #e63946;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+  transition: opacity 0.2s;
+}
+
+.drawing-detail-ext-link:hover {
+  opacity: 0.7;
+}
+
+.drawing-detail-notes {
+  margin-top: 2rem;
+  padding: 1.25rem 1.5rem;
+  background: #141414;
+  border: 1px solid #2a2a2a;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.drawing-detail-notes p {
+  margin: 0;
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+.drawing-detail-disclaimer {
+  color: #666 !important;
+  font-size: 0.85rem !important;
+  margin-top: 0.5rem !important;
+  line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+  .parts-table th,
+  .parts-table td {
+    padding: 0.5rem 0.6rem;
+    font-size: 0.8rem;
+  }
+}

@@ -20,6 +20,8 @@ import AboutPage from './pages/AboutPage'
 import GalleryPage from './pages/GalleryPage'
 import InfoPage from './pages/InfoPage'
 import TakanonPage from './pages/TakanonPage'
+import DrawingPage from './pages/DrawingPage'
+import DrawingDetailPage from './pages/DrawingDetailPage'
 
 function HomePage() {
   return (
@@ -56,6 +58,8 @@ export default function App() {
         <Route path="/gallery" element={<GalleryPage />} />
         <Route path="/info" element={<InfoPage />} />
         <Route path="/takanon" element={<TakanonPage />} />
+        <Route path="/information/drawing" element={<DrawingPage />} />
+        <Route path="/information/drawing/:slug" element={<DrawingDetailPage />} />
       </Routes>
     </>
   )

@@ -4,7 +4,7 @@ import './InfoDatabase.css'
 const categories = [
   { icon: '🔧', title: 'לוח טיפולים', desc: 'תוכנית טיפולים מפורטת לפי קילומטראז', route: '/maintenance' },
   { icon: '🛢️', title: 'מפרט שמנים', desc: 'סוגי שמנים מומלצים לכל מערכת ברכב', route: '/information/oils' },
-  { icon: '📐', title: 'שרטוטים טכניים', desc: 'תרשימים ושרטוטים של מערכות הרכב' },
+  { icon: '📐', title: 'שרטוטים טכניים', desc: 'תרשימים ושרטוטים של מערכות הרכב', route: '/information/drawing' },
   { icon: '🔩', title: 'מק"טים לחלקים', desc: 'מספרי קטלוג לחלפים מקוריים וחלופיים' },
   { icon: '💡', title: 'נורות ותאורה', desc: 'מפרט נורות לכל תפקוד ברכב', route: '/information/bulbs' },
   { icon: '📻', title: 'תדרי רדיו', desc: 'תדרים לתקשורת בשטח בין נסיעות שיירה', route: '/information/radio-frequencies' },
