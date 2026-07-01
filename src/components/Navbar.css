@@ -134,7 +134,16 @@
 .hamburger span.open:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
 @media (max-width: 768px) {
-  .hamburger { display: flex; }
+  .nav-container {
+    flex-wrap: wrap;
+  }
+
+  .hamburger {
+    display: flex;
+    order: 3;
+    width: 100%;
+    justify-content: flex-end;
+  }
 
   .nav-links {
     display: none;
