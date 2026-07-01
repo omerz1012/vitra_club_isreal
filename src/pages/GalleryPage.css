@@ -1,12 +1,12 @@
 .gallery-page {
   min-height: 100vh;
-  background: #0a0a0a;
+  background: var(--bg-dark);
   color: #e0e0e0;
 }
 
 .gallery-page-header {
-  background: linear-gradient(135deg, #1a1a1a 0%, #111 100%);
-  border-bottom: 1px solid #2a2a2a;
+  background: linear-gradient(135deg, var(--bg-card) 0%, var(--bg-dark) 100%);
+  border-bottom: 1px solid var(--border);
   padding: 1.25rem 2rem;
   padding-top: 5rem;
   text-align: center;
@@ -25,7 +25,7 @@
   right: 2rem;
   top: 50%;
   transform: translateY(-50%);
-  color: #e63946;
+  color: var(--green-light);
   text-decoration: none;
   font-weight: 600;
   font-size: 0.95rem;

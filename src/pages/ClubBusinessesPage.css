@@ -1,13 +1,13 @@
 .club-biz-page {
   min-height: 100vh;
-  background: #0a0a0a;
+  background: var(--bg-dark);
   color: #e0e0e0;
   font-family: inherit;
 }
 
 .club-biz-header {
-  background: linear-gradient(135deg, #1a1a1a 0%, #111 100%);
-  border-bottom: 1px solid #2a2a2a;
+  background: linear-gradient(135deg, var(--bg-card) 0%, var(--bg-dark) 100%);
+  border-bottom: 1px solid var(--border);
   padding: 1.25rem 2rem;
   padding-top: 5rem;
   text-align: center;
@@ -19,7 +19,7 @@
   right: 2rem;
   top: 50%;
   transform: translateY(-50%);
-  color: #e63946;
+  color: var(--green-light);
   text-decoration: none;
   font-weight: 600;
   font-size: 0.95rem;
@@ -35,7 +35,7 @@
 }
 
 .club-biz-header p {
-  color: #888;
+  color: var(--text-muted);
   font-size: 0.95rem;
   margin: 0;
 }
@@ -88,8 +88,8 @@
 }
 
 .sheet-card {
-  background: #141414;
-  border: 1px solid #2a2a2a;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
   border-radius: 12px;
   padding: 1.5rem;
   display: flex;
@@ -98,7 +98,7 @@
   transition: border-color 0.2s;
 }
 
-.sheet-card:hover { border-color: #e63946; }
+.sheet-card:hover { border-color: var(--green-light); }
 
 .sheet-icon { font-size: 2rem; flex-shrink: 0; }
 
@@ -117,7 +117,7 @@
 
 .sheet-btn {
   display: inline-block;
-  background: #e63946;
+  background: var(--green-light);
   color: #fff;
   font-weight: 700;
   font-size: 0.95rem;
