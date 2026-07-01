@@ -21,6 +21,7 @@ import GalleryPage from './pages/GalleryPage'
 import InfoPage from './pages/InfoPage'
 import TakanonPage from './pages/TakanonPage'
 import DrawingPage from './pages/DrawingPage'
+import OffRoadPage from './pages/OffRoadPage'
 import DrawingDetailPage from './pages/DrawingDetailPage'
 
 function HomePage() {
@@ -53,6 +54,7 @@ export default function App() {
         <Route path="/information/recommended-businesses" element={<BusinessesPage />} />
         <Route path="/information/club-businesses" element={<ClubBusinessesPage />} />
         <Route path="/information/coupons" element={<CouponsPage />} />
+        <Route path="/information/off-road" element={<OffRoadPage />} />
         <Route path="/videos" element={<VideosPage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/gallery" element={<GalleryPage />} />

@@ -5,15 +5,27 @@ const categories = [
   {
     name: 'טיולים',
     videos: [
-      { id: 'eZbcYH9nM7c', title: 'נסיעת שטח - גרנד ויטרה' },
+      { id: 'eZbcYH9nM7c', title: 'טיול מועדון חוצה דרום סוזוקי גרנד ויטרה - חלק ראשון מעלה יאיר' },
     ],
   },
   {
-    name: 'הסבר רכב',
+    name: 'הסבר על הרכב',
     videos: [
-      { id: '03iLQhNhn50', title: 'הסבר על הרכב - גרנד ויטרה' },
-      { id: 'joLBAsEqpy0', title: 'הסבר על הרכב - חלק ב' },
-      { id: 'Vhzzl7kUwaA', title: 'הסבר על הרכב - חלק ג' },
+      { id: '03iLQhNhn50', title: 'סרטון הסברה על מכלולי הרכב עם המכונאי טל צופי' },
+      { id: 'SAKQCsD8Roc', title: 'כמה אוויר להוריד בשטח' },
+      { id: 'Vhzzl7kUwaA', title: 'מערכת טראקשן - בקרת משיכה' },
+      { id: 'joLBAsEqpy0', title: 'גרנד ויטרה עם נעילה אחורית' },
+    ],
+  },
+  {
+    name: 'עשה זאת בעצמך - טיפולים לרכב DIY',
+    videos: [
+      { id: 'MFjxIiBePr0', title: 'ליטוש פנסים לרכב' },
+      { id: 'zP9YpCt1rC4', title: 'חיתוך טמבון' },
+      { id: '3jlMcnTMb5I', title: 'החלפת צלחות ורפידות' },
+      { id: '3j1ai4hA5hM', title: 'החלפת מוטות מקשרים' },
+      { id: 'XTyI8g9BZDc', title: 'החלפת פילטר שמן מנוע 2.4' },
+      { id: 'H8eHUnI4U_Y', title: 'החלפת נאבה' },
     ],
   },
 ]

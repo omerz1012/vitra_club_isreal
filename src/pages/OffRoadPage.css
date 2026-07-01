@@ -1,0 +1,84 @@
+.offroad-page {
+  min-height: 100vh;
+  background: #0a0a0a;
+  color: #e0e0e0;
+  font-family: inherit;
+}
+
+.offroad-header {
+  background: linear-gradient(135deg, #1a1a1a 0%, #111 100%);
+  border-bottom: 1px solid #2a2a2a;
+  padding: 1.25rem 2rem;
+  padding-top: 5rem;
+  text-align: center;
+  position: relative;
+}
+
+.offroad-header h1 {
+  font-size: 2.5rem;
+  color: #fff;
+  margin: 0.5rem 0;
+}
+
+.offroad-header p {
+  color: #888;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.offroad-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.offroad-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.offroad-card {
+  background: #141414;
+  border: 1px solid #2a2a2a;
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  text-decoration: none;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.offroad-card:hover {
+  border-color: #e63946;
+  transform: translateY(-2px);
+}
+
+.offroad-card h3 {
+  color: #fff;
+  font-size: 1rem;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.offroad-link {
+  flex-shrink: 0;
+  background: #e63946;
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 0.5rem 0.9rem;
+  border-radius: 8px;
+  white-space: nowrap;
+}
+
+@media (max-width: 600px) {
+  .offroad-header h1 { font-size: 1.8rem; }
+
+  .offroad-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
