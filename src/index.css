@@ -31,6 +31,25 @@ body {
   direction: rtl;
   line-height: 1.6;
   overflow-x: hidden;
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url('/logo.png');
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.35;
+  pointer-events: none;
+  z-index: 0;
+}
+
+#root {
+  position: relative;
+  z-index: 1;
 }
 
 a {

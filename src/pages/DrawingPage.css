@@ -1,6 +1,6 @@
 .drawing-page {
   min-height: 100vh;
-  background: var(--bg-dark);
+  background: rgba(15, 20, 18, 0.93);
   color: #e0e0e0;
   font-family: inherit;
 }

@@ -1,5 +1,5 @@
 .stats-section {
-  background: linear-gradient(180deg, var(--bg-dark) 0%, #111a0f 100%);
+  background: linear-gradient(180deg, rgba(15, 20, 18, 0.93) 0%, rgba(17, 26, 15, 0.93) 100%);
 }
 
 .stats-grid {
