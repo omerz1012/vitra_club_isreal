@@ -1,0 +1,167 @@
+.parts-numbers-page {
+  min-height: 100vh;
+  background: var(--bg-dark);
+  color: #e0e0e0;
+  font-family: inherit;
+}
+
+.parts-numbers-header {
+  background: linear-gradient(135deg, var(--bg-card) 0%, var(--bg-dark) 100%);
+  border-bottom: 1px solid var(--border);
+  padding: 1.25rem 2rem;
+  padding-top: 5rem;
+  text-align: center;
+}
+
+.parts-numbers-header h1 {
+  font-size: 2.5rem;
+  color: #fff;
+  margin: 0.5rem 0;
+}
+
+.parts-numbers-header p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.parts-numbers-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.parts-numbers-section {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.parts-numbers-section-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+  padding: 0.9rem 1.25rem;
+  background: var(--bg-card2);
+  border-bottom: 1px solid var(--border);
+}
+
+.parts-numbers-table-wrap { overflow-x: auto; }
+
+.parts-numbers-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  direction: rtl;
+}
+
+.parts-numbers-table th {
+  background: var(--bg-card2);
+  color: var(--text-muted);
+  font-weight: 600;
+  padding: 0.55rem 1.25rem;
+  text-align: right;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.parts-numbers-table td {
+  padding: 0.6rem 1.25rem;
+  border-top: 1px solid var(--bg-card2);
+  vertical-align: middle;
+}
+
+.parts-numbers-table tr:hover td { background: var(--bg-card2); }
+
+.product-cell { color: #ccc; }
+
+.sku-code {
+  font-family: monospace;
+  font-size: 0.88rem;
+  color: #aaa;
+  background: var(--bg-card2);
+  padding: 0.15rem 0.45rem;
+  border-radius: 4px;
+}
+
+.dim-cell { color: var(--text-muted); font-size: 0.85rem; }
+
+.weatherstrip-intro {
+  padding: 1.1rem 1.25rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.weatherstrip-intro-text {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin: 0 0 0.75rem;
+}
+
+.weatherstrip-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 0.9rem;
+}
+
+.weatherstrip-link-row {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  font-size: 0.88rem;
+}
+
+.weatherstrip-link-name { color: #ccc; min-width: 8.5rem; }
+
+.weatherstrip-link-url {
+  color: var(--green-light);
+  text-decoration: none;
+  font-size: 0.8rem;
+  word-break: break-all;
+}
+
+.weatherstrip-link-url:hover { text-decoration: underline; }
+
+.weatherstrip-diagram-link {
+  display: inline-block;
+  color: var(--green-light);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.92rem;
+}
+
+.weatherstrip-diagram-link:hover { text-decoration: underline; }
+
+.weatherstrip-subtable + .weatherstrip-subtable { border-top: 1px solid var(--border); }
+
+.weatherstrip-subtable-title {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+  padding: 0.75rem 1.25rem;
+  background: var(--bg-card2);
+}
+
+.parts-numbers-image-wrap {
+  padding: 1.25rem;
+  display: flex;
+  justify-content: center;
+}
+
+.parts-numbers-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+@media (max-width: 600px) {
+  .parts-numbers-header h1 { font-size: 1.8rem; }
+}

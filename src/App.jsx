@@ -23,6 +23,8 @@ import TakanonPage from './pages/TakanonPage'
 import DrawingPage from './pages/DrawingPage'
 import OffRoadPage from './pages/OffRoadPage'
 import DrawingDetailPage from './pages/DrawingDetailPage'
+import PartsNumbersPage from './pages/PartsNumbersPage'
+import DiyPage from './pages/DiyPage'
 
 function HomePage() {
   return (
@@ -62,6 +64,8 @@ export default function App() {
         <Route path="/takanon" element={<TakanonPage />} />
         <Route path="/information/drawing" element={<DrawingPage />} />
         <Route path="/information/drawing/:slug" element={<DrawingDetailPage />} />
+        <Route path="/information/parts-numbers" element={<PartsNumbersPage />} />
+        <Route path="/information/diy" element={<DiyPage />} />
       </Routes>
     </>
   )

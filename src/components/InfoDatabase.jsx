@@ -5,12 +5,11 @@ const categories = [
   { icon: '🔧', title: 'לוח טיפולים', desc: 'תוכנית טיפולים מפורטת לפי קילומטראז', route: '/maintenance' },
   { icon: '🛢️', title: 'מפרט שמנים', desc: 'סוגי שמנים מומלצים לכל מערכת ברכב', route: '/information/oils' },
   { icon: '📐', title: 'שרטוטים טכניים', desc: 'תרשימים ושרטוטים של מערכות הרכב', route: '/information/drawing' },
-  { icon: '🔩', title: 'מק"טים לחלקים', desc: 'מספרי קטלוג לחלפים מקוריים וחלופיים' },
+  { icon: '🔩', title: 'מק"טים לחלקים', desc: 'מספרי קטלוג לחלפים מקוריים וחלופיים', route: '/information/parts-numbers' },
   { icon: '💡', title: 'נורות ותאורה', desc: 'מפרט נורות לכל תפקוד ברכב', route: '/information/bulbs' },
   { icon: '📻', title: 'תדרי רדיו', desc: 'תדרים לתקשורת בשטח בין נסיעות שיירה', route: '/information/radio-frequencies' },
-  { icon: '🛠️', title: 'מדריכי DIY', desc: 'מדריכים לתיקונים ושיפורים עצמיים' },
+  { icon: '🛠️', title: 'מדריכי DIY', desc: 'מדריכים לתיקונים ושיפורים עצמיים', route: '/information/diy' },
   { icon: '🏪', title: 'ספקי חלקים', desc: 'רשימת ספקים מומלצים בכל הארץ', route: '/information/sites-parts' },
-  { icon: '🛒', title: 'המלצות קנייה', desc: 'ציוד ואביזרים מומלצים לשטח' },
   { icon: '📋', title: 'בתי עסק', desc: 'גרז\'ים ובתי עסק מומלצים לגרנד ויטרה', route: '/information/recommended-businesses' },
   { icon: '⭐', title: 'בעלי עסקים מומלצים', desc: 'עסקים של חברי המועדון — שירותים בין חברים', route: '/information/club-businesses' },
   { icon: '🎟️', title: 'קודי קופון', desc: 'הנחות בלעדיות לחברי המועדון', route: '/information/coupons' },
@@ -35,7 +34,7 @@ export default function InfoDatabase() {
     <section className="database-section" id="database">
       <div className="container">
         <h2 className="section-title">מאגר <span>המידע</span></h2>
-        <p className="section-subtitle">14 קטגוריות של מידע מקצועי ומקיף לבעלי גרנד ויטרה</p>
+        <p className="section-subtitle">13 קטגוריות של מידע מקצועי ומקיף לבעלי גרנד ויטרה</p>
 
         <div className="db-grid">
           {categories.map((cat, i) => (
