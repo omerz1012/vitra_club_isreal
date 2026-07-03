@@ -6,8 +6,7 @@ const links = [
   { label: 'בית', href: '/' },
   { label: 'אודות', href: '/about' },
   { label: 'מאגר מידע', href: '/info' },
-  { label: 'סרטונים', href: '/videos' },
-  { label: 'גלריה', href: '/gallery' },
+  { label: 'מבצעים', href: '/deals' },
   { label: 'תקנון', href: '/takanon' },
 ]
 
