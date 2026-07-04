@@ -279,7 +279,7 @@ function RecommendedLiftsContent() {
       </div>
       <div className="drawing-detail-notes">
         <p><strong>מידות לפני הגבהה</strong></p>
-        <p>46 מ"מ ממרכז גלגל לכנף</p>
+        <p>46 ס"מ ממרכז גלגל לכנס</p>
         <p className="drawing-detail-disclaimer">החוק מתיר 50–51 ס"מ הגבהה חוקית</p>
       </div>
     </>

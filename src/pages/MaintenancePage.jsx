@@ -2,14 +2,14 @@ import { Link } from 'react-router-dom'
 import './MaintenancePage.css'
 
 const conditionCodes = [
-  { code: 'A', desc: 'נסיעות קצרות מרובות' },
-  { code: 'B', desc: 'נסיעה קשה בשטח / בוץ' },
-  { code: 'C', desc: 'נסיעה בדרכים מאובקות' },
-  { code: 'D', desc: 'קור קיצוני או כבישים עם מלח' },
-  { code: 'E', desc: 'נסיעות קצרות תכופות בקור קיצוני' },
-  { code: 'F', desc: 'שימוש בדלק עם עופרת' },
-  { code: 'G', desc: 'לא רלוונטי' },
-  { code: 'H', desc: 'גרירת נגרר (אם מצויד)' },
+  { code: 'A', desc: 'נהיגה מרובה של נסיעות קצרות' },
+  { code: 'B', desc: 'נהיגה בשטח קשה ו/או דרכים בוציות' },
+  { code: 'C', desc: 'נהיגה בדרכים מאובקות' },
+  { code: 'D', desc: 'נהיגה במזג אוויר קר במיוחד או על דרכים עם מלח' },
+  { code: 'E', desc: 'נסיעות קצרות תכופות במזג אוויר קר מאוד' },
+  { code: 'F', desc: 'שימוש בדלק מועשר בעופרת' },
+  { code: 'G', desc: 'לא בשימוש' },
+  { code: 'H', desc: 'גרירת נגרר (אם הרכב מותאם לכך)' },
 ]
 
 const notations = [
@@ -69,17 +69,24 @@ export default function MaintenancePage() {
           <h2 className="m-section-title">איך לקרוא את לוח התחזוקה</h2>
           <div className="how-to-grid">
             <div className="how-to-card">
-              <div className="how-to-icon">🏷️</div>
+              <div className="how-to-icon">1️⃣</div>
               <div>
                 <h3>סיווג הקודים</h3>
                 <p>כל משימת תחזוקה מקושרת לקודים של תנאי נהיגה קשים שמתאימים לה. למשל, קוד B אומר שהמשימה נדרשת אם אתה נוהג בשטח בוצי.</p>
               </div>
             </div>
             <div className="how-to-card">
-              <div className="how-to-icon">📋</div>
+              <div className="how-to-icon">2️⃣</div>
               <div>
                 <h3>משימות תחזוקה</h3>
-                <p>מוצגות בטבלה תחת מרווחי תחזוקה — הזמן או הקילומטרים שצריך לעבור בין תחזוקות, תלוי איזה מגיע קודם.</p>
+                <p>מוצגות בטבלה תחת שם הרכיב או הפעולה הנדרשת.</p>
+              </div>
+            </div>
+            <div className="how-to-card">
+              <div className="how-to-icon">3️⃣</div>
+              <div>
+                <h3>מרווחי תחזוקה</h3>
+                <p>הזמן או הקילומטרים שצריך לעבור בין תחזוקות, תלוי איזה מגיע קודם.</p>
               </div>
             </div>
           </div>
@@ -105,7 +112,7 @@ export default function MaintenancePage() {
 
         {/* Condition Codes */}
         <section className="m-section">
-          <h2 className="m-section-title">קודי תנאי נסיעה קשים</h2>
+          <h2 className="m-section-title">מקרא לקודים בתנאי נהיגה קשים</h2>
           <div className="code-grid">
             {conditionCodes.map(({ code, desc }) => (
               <div key={code} className="code-card">
@@ -129,9 +136,20 @@ export default function MaintenancePage() {
           </div>
         </section>
 
+        {/* Full maintenance board */}
+        <section className="m-section">
+          <h2 className="m-section-title">לוח התחזוקה המלא</h2>
+          <div className="board-image-wrap">
+            <img src="/mainatance_board_1.png" alt="לוח תחזוקה בתנאי נהיגה קשים - טבלה 1" className="board-image" />
+          </div>
+          <div className="board-image-wrap">
+            <img src="/mainatance_board_2.png" alt="לוח תחזוקה בתנאי נהיגה קשים - טבלה 2" className="board-image" />
+          </div>
+        </section>
+
         {/* Driving Scenarios */}
         <section className="m-section">
-          <h2 className="m-section-title">טיפולים לפי סוג שטח</h2>
+          <h2 className="m-section-title">דוגמאות לתחזוקה לפי תנאי נהיגה קשים</h2>
           <div className="scenarios-grid">
             {scenarios.map((scenario) => (
               <div key={scenario.title} className="scenario-card">

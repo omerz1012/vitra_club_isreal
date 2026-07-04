@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
+import JoinModal from './JoinModal'
 import './Navbar.css'
 
 const links = [
@@ -13,6 +14,7 @@ const links = [
 export default function Navbar() {
   const [open, setOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
+  const [joinModalOpen, setJoinModalOpen] = useState(false)
   const navigate = useNavigate()
 
   useEffect(() => {
@@ -29,9 +31,8 @@ export default function Navbar() {
           <div className="logo-text">
             <div className="logo-top-row">
               <span className="logo-badge">מועדון רשמי</span>
-              <span className="logo-main">Suzuki Grand Vitara 4x4 Israel</span>
+              <span className="logo-main">מועדון Suzuki Grand Vitara 4x4 Israel</span>
             </div>
-            <span className="logo-sub">קהילת בעלי הגרנד ויטרה בישראל</span>
           </div>
         </a>
 
@@ -42,7 +43,13 @@ export default function Navbar() {
             </li>
           ))}
           <li>
-            <a href="#join" className="nav-cta" onClick={() => setOpen(false)}>הצטרפו</a>
+            <a
+              href="#join"
+              className="nav-cta"
+              onClick={(e) => { e.preventDefault(); setOpen(false); setJoinModalOpen(true) }}
+            >
+              הצטרפו
+            </a>
           </li>
         </ul>
 
@@ -52,6 +59,8 @@ export default function Navbar() {
           <span className={open ? 'open' : ''} />
         </button>
       </div>
+
+      {joinModalOpen && <JoinModal onClose={() => setJoinModalOpen(false)} />}
     </nav>
   )
 }

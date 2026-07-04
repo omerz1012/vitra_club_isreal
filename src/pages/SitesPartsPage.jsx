@@ -39,16 +39,6 @@ const suppliers = [
   },
 ]
 
-function Stars({ count }) {
-  return (
-    <div className="stars">
-      {[1, 2, 3, 4, 5].map((i) => (
-        <span key={i} className={i <= count ? 'star filled' : 'star'}>★</span>
-      ))}
-    </div>
-  )
-}
-
 export default function SitesPartsPage() {
   return (
     <div className="sites-page" dir="rtl">
@@ -70,7 +60,6 @@ export default function SitesPartsPage() {
                   <a href={s.url} target="_blank" rel="noopener noreferrer" className="supplier-name">
                     🌐 {s.name}
                   </a>
-                  <Stars count={s.rating} />
                 </div>
               </div>
 

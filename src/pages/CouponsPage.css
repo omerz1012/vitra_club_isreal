@@ -88,6 +88,23 @@
 
 .coupon-icon { font-size: 2.5rem; flex-shrink: 0; }
 
+.coupon-logo {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: #fff;
+  padding: 4px;
+  flex-shrink: 0;
+}
+
+.coupon-meta a {
+  color: var(--green-light);
+  text-decoration: none;
+}
+
+.coupon-meta a:hover { text-decoration: underline; }
+
 .coupon-info h3 {
   color: #fff;
   font-size: 1.1rem;
@@ -125,7 +142,8 @@
   justify-content: center;
   padding: 1.5rem;
   gap: 0.75rem;
-  min-width: 180px;
+  width: 200px;
+  flex-shrink: 0;
 }
 
 .coupon-discount {
@@ -187,6 +205,6 @@
   .coupon-right {
     border-right: none;
     border-top: 1px solid var(--border);
-    min-width: unset;
+    width: 100%;
   }
 }

@@ -85,7 +85,7 @@ const businesses = [
     maps: 'https://www.google.com/maps/search/?api=1&query=%D7%A9%D7%93%D7%A8%D7%95%D7%AA%20%D7%94%D7%A8%D7%A6%D7%9C%206%2C%20%D7%A8%D7%9E%D7%9C%D7%94',
   },
   {
-    name: 'הנטר פרונט',
+    name: 'PRODX הנטר פרונט',
     type: 'מוסך ופרונט',
     location: 'מקלף 30, חיפה',
     contact: 'נתי, אביב | 054-5813-031 | 054-580-1991',
@@ -99,6 +99,13 @@ const businesses = [
     maps: 'https://share.google/6e8LtkM6pDmuegZUa',
     note: 'קוד קופון 10% על כל האתר: GVTEAM10 (בהצגת חבר מועדון)',
   },
+  {
+    name: 'Just Be',
+    type: 'ייצור חלקים והגבהות',
+    location: '',
+    contact: 'בן עציון | 054-4964417',
+    note: 'ייצור חלקים מחוזקים לרכב, קיטי הגבהה וחלומות במגירה',
+  },
 ]
 
 const typeColors = {
@@ -109,6 +116,7 @@ const typeColors = {
   'פרונט': '#1abc9c',
   'מוסך ופרונט': '#3498db',
   'ציוד אביזרים וקמפינג': '#e63946',
+  'ייצור חלקים והגבהות': '#f39c12',
 }
 
 export default function BusinessesPage() {

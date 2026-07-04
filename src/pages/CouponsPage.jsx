@@ -6,13 +6,21 @@ const coupons = [
   {
     business: 'שטח אקסטרים',
     type: 'ציוד, אביזרים וקמפינג',
-    icon: '🏕️',
+    image: '/שטח_אקסטרים_לוגו.png',
+    website: 'https://extremeoffroad.co.il/',
     code: 'GVTEAM10',
     discount: '10%',
     description: 'הנחה של 10% על כל האתר',
     condition: 'בכפוף להצגת כרטיס חבר מועדון בלבד',
     location: 'דרך העצמאות 16, יהוד',
     contact: 'דור | 054-5057868',
+  },
+  {
+    business: 'First Car 4X4',
+    type: 'ציוד ואביזרים',
+    image: '/first_car_logo.avif',
+    website: 'https://www.firstcar4x4.com/',
+    code: 'SUZUKIFC14',
   },
 ]
 
@@ -28,18 +36,27 @@ function CouponCard({ coupon }) {
   return (
     <div className="coupon-card">
       <div className="coupon-left">
-        <div className="coupon-icon">{coupon.icon}</div>
+        {coupon.image ? (
+          <img className="coupon-logo" src={coupon.image} alt={coupon.business} />
+        ) : (
+          <div className="coupon-icon">{coupon.icon}</div>
+        )}
         <div className="coupon-info">
           <h3>{coupon.business}</h3>
           <span className="coupon-type">{coupon.type}</span>
-          <p className="coupon-desc">{coupon.description}</p>
+          {coupon.description && <p className="coupon-desc">{coupon.description}</p>}
+          {coupon.website && (
+            <p className="coupon-meta">
+              🌐 <a href={coupon.website} target="_blank" rel="noopener noreferrer">{coupon.website}</a>
+            </p>
+          )}
           {coupon.location && <p className="coupon-meta">📍 {coupon.location}</p>}
           {coupon.contact && <p className="coupon-meta">📞 {coupon.contact}</p>}
         </div>
       </div>
 
       <div className="coupon-right">
-        <div className="coupon-discount">{coupon.discount}</div>
+        {coupon.discount && <div className="coupon-discount">{coupon.discount}</div>}
         <button className="coupon-code-btn" onClick={copyCode}>
           <span className="code-text">{coupon.code}</span>
           <span className="copy-label">{copied ? '✓ הועתק' : 'העתק קוד'}</span>

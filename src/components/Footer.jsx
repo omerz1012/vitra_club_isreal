@@ -9,8 +9,7 @@ export default function Footer() {
             <div className="footer-logo">
               <img src="/logo.png" alt="לוגו" style={{height: '48px', width: '48px', objectFit: 'contain', borderRadius: '8px'}} />
               <div>
-                <span className="footer-logo-main">Suzuki Grand Vitara 4X4 ISRAEL</span>
-                <span className="footer-logo-sub">הקהילה הרשמית מאז 2016</span>
+                <span className="footer-logo-main">מועדון Suzuki Grand Vitara 4x4 Israel</span>
               </div>
             </div>
             <p>מאגר המידע המקיף ביותר לבעלי גרנד ויטרה בישראל — תחזוקה, שטח וקהילה.</p>
