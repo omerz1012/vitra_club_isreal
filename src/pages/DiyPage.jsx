@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './DiyPage.css'
 
 const sections = [
@@ -80,6 +81,7 @@ export default function DiyPage() {
   return (
     <div className="diy-page" dir="rtl">
       <div className="diy-header">
+        <Link to="/info" className="back-btn">→ חזרה למאגר המידע</Link>
         <h1>🛠️ מדריכי DIY</h1>
         <p>מדריכים לתיקונים ושיפורים עצמיים — גרנד ויטרה</p>
       </div>

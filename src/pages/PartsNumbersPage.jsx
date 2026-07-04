@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './PartsNumbersPage.css'
 
 const parts = [
@@ -105,6 +106,7 @@ export default function PartsNumbersPage() {
   return (
     <div className="parts-numbers-page" dir="rtl">
       <div className="parts-numbers-header">
+        <Link to="/info" className="back-btn">→ חזרה למאגר המידע</Link>
         <h1>🔩 מק"טים לחלקים</h1>
         <p>מספרי קטלוג לחלפים מקוריים וחלופיים — גרנד ויטרה</p>
       </div>

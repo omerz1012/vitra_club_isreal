@@ -58,6 +58,7 @@ export default function MaintenancePage() {
   return (
     <div className="maintenance-page" dir="rtl">
       <div className="maintenance-header">
+        <Link to="/" className="back-btn">→ חזרה לדף הבית</Link>
         <h1>🧰 לוח טיפולים ותחזוקה</h1>
         <p>מועדון גרנד ויטרה ישראל — מבוסס על המלצות יצרן לנסיעה בתנאים קשים</p>
       </div>

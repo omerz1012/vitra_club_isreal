@@ -6,6 +6,7 @@ export default function GalleryPage() {
   return (
     <div className="gallery-page" dir="rtl">
       <div className="gallery-page-header">
+        <Link to="/" className="back-btn">→ חזרה לדף הבית</Link>
         <h1>גלריית הקהילה</h1>
       </div>
       <Gallery />

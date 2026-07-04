@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './VideosPage.css'
 
 const categories = [
@@ -33,6 +34,7 @@ export default function VideosPage() {
   return (
     <div className="videos-page">
       <div className="videos-page-header">
+        <Link to="/" className="back-btn">→ חזרה לדף הבית</Link>
         <h1>סרטוני <span>גרנד ויטרה</span></h1>
         <p>כל הסרטונים מחולקים לפי קטגוריות</p>
       </div>

@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import './DrawingDetailPage.css'
 
 const titleBySlug = {
@@ -403,6 +403,7 @@ export default function DrawingDetailPage() {
   return (
     <div className="drawing-detail-page" dir="rtl">
       <div className="drawing-detail-header">
+        <Link to="/info" className="back-btn">→ חזרה למאגר המידע</Link>
         <h1>{title}</h1>
       </div>
       <div className="drawing-detail-container">

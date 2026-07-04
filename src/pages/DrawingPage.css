@@ -11,7 +11,21 @@
   padding: 1.25rem 2rem;
   padding-top: 5rem;
   text-align: center;
+  position: relative;
 }
+
+.back-btn {
+  position: absolute;
+  right: 2rem;
+  top: 5.75rem;
+  color: var(--green-light);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: opacity 0.2s;
+}
+
+.back-btn:hover { opacity: 0.7; }
 
 .drawing-header h1 {
   font-size: 2.5rem;
@@ -86,4 +100,11 @@
 @media (max-width: 600px) {
   .drawing-header h1 { font-size: 1.8rem; }
   .drawing-container { padding: 1rem; }
+
+  .back-btn {
+    position: static;
+    transform: none;
+    display: block;
+    margin-bottom: 1rem;
+  }
 }

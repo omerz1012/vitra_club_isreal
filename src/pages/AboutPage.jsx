@@ -5,6 +5,7 @@ export default function AboutPage() {
   return (
     <div className="about-page" dir="rtl">
       <div className="about-header">
+        <Link to="/" className="back-btn">→ חזרה לדף הבית</Link>
         <h1>אודות המועדון</h1>
       </div>
 

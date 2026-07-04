@@ -32,6 +32,7 @@ export default function DrawingPage() {
   return (
     <div className="drawing-page" dir="rtl">
       <div className="drawing-header">
+        <Link to="/info" className="back-btn">→ חזרה למאגר המידע</Link>
         <h1>📐 שרטוטים טכניים</h1>
         <p>תרשימים ושרטוטים של מערכות הרכב</p>
       </div>

@@ -36,6 +36,7 @@ export default function RadioPage() {
   return (
     <div className="radio-page" dir="rtl">
       <div className="radio-header">
+        <Link to="/info" className="back-btn">→ חזרה למאגר המידע</Link>
         <h1>📻 תדרי רדיו</h1>
         <p>תדרים לתקשורת בשטח בין נסיעות שיירה — מועדון גרנד ויטרה ישראל</p>
       </div>
@@ -45,7 +46,7 @@ export default function RadioPage() {
         <div className="club-freq-card">
           <div className="club-freq-label">תדד מועדון</div>
           <div className="club-freq-value">{CLUB_FREQ}</div>
-          <div className="club-freq-sub">Suzuki Grand Vitara Israel 4x4 Team</div>
+          <div className="club-freq-sub">Suzuki Grand Vitara Israel 4x4</div>
         </div>
 
         <div className="freq-tables">

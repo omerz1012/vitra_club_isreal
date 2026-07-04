@@ -45,7 +45,7 @@ const platforms = [
   {
     icon: '📸',
     name: 'אינסטגרם',
-    count: 1180,
+    count: 1577,
     label: 'עוקבים',
     color: '#e1306c',
     href: 'https://www.instagram.com/gv4x4_israel_team?igsh=aWpyZWJ4czZ2cTA0',
@@ -54,7 +54,7 @@ const platforms = [
   {
     icon: '💬',
     name: 'וואטסאפ',
-    count: 942,
+    count: 1049,
     label: 'חברי קבוצה',
     color: '#25d366',
     href: 'https://whatsapp.com',

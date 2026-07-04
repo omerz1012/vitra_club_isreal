@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import './DealsPage.css'
 
 const deals = [
@@ -47,6 +48,7 @@ export default function DealsPage() {
   return (
     <div className="deals-page" dir="rtl">
       <div className="deals-header">
+        <Link to="/" className="back-btn">→ חזרה לדף הבית</Link>
         <h1>🏷️ מבצעים</h1>
         <p>מבצעים בלעדיים לחברי המועדון</p>
       </div>

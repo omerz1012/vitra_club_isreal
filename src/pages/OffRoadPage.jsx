@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './OffRoadPage.css'
 
 const tracks = [
@@ -16,6 +17,7 @@ export default function OffRoadPage() {
   return (
     <div className="offroad-page" dir="rtl">
       <div className="offroad-header">
+        <Link to="/info" className="back-btn">→ חזרה למאגר המידע</Link>
         <h1>🗺️ מסלולי שטח</h1>
         <p>מסלולים מומלצים לנסיעות שטח בישראל</p>
       </div>

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './TakanonPage.css'
 
 const sections = [
@@ -75,6 +76,7 @@ export default function TakanonPage() {
   return (
     <div className="takanon-page" dir="rtl">
       <div className="takanon-header">
+        <Link to="/" className="back-btn">→ חזרה לדף הבית</Link>
         <h1>תקנון מועדון</h1>
         <p className="takanon-subtitle">Suzuki Grand Vitara 4X4 Israel Team</p>
       </div>

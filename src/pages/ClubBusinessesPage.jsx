@@ -7,6 +7,7 @@ export default function ClubBusinessesPage() {
   return (
     <div className="club-biz-page" dir="rtl">
       <div className="club-biz-header">
+        <Link to="/info" className="back-btn">→ חזרה למאגר המידע</Link>
         <h1>🤝 עסקים של חברי המועדון</h1>
         <p>פלטפורמת קישור בין יזמי חברים לחברים המחפשים שירותים</p>
       </div>
