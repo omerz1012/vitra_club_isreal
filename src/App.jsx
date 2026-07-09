@@ -18,6 +18,7 @@ import CouponsPage from './pages/CouponsPage'
 import VideosPage from './pages/VideosPage'
 import AboutPage from './pages/AboutPage'
 import GalleryPage from './pages/GalleryPage'
+import GalleryDetailPage from './pages/GalleryDetailPage'
 import InfoPage from './pages/InfoPage'
 import TakanonPage from './pages/TakanonPage'
 import DrawingPage from './pages/DrawingPage'
@@ -61,6 +62,7 @@ export default function App() {
         <Route path="/videos" element={<VideosPage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/gallery" element={<GalleryPage />} />
+        <Route path="/gallery/:folderId" element={<GalleryDetailPage />} />
         <Route path="/info" element={<InfoPage />} />
         <Route path="/takanon" element={<TakanonPage />} />
         <Route path="/information/drawing" element={<DrawingPage />} />

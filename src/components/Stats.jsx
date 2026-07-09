@@ -1,4 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
+import { FaFacebook, FaInstagram, FaWhatsapp } from 'react-icons/fa'
+import JoinModal from './JoinModal'
 import './Stats.css'
 
 function Counter({ target }) {
@@ -34,7 +36,7 @@ function Counter({ target }) {
 
 const platforms = [
   {
-    icon: '📘',
+    icon: <FaFacebook />,
     name: 'פייסבוק',
     count: 6383,
     label: 'חברים בקבוצה',
@@ -43,7 +45,7 @@ const platforms = [
     cta: 'הצטרפו לקבוצה',
   },
   {
-    icon: '📸',
+    icon: <FaInstagram />,
     name: 'אינסטגרם',
     count: 1577,
     label: 'עוקבים',
@@ -52,17 +54,20 @@ const platforms = [
     cta: 'עקבו אחרינו',
   },
   {
-    icon: '💬',
+    icon: <FaWhatsapp />,
     name: 'וואטסאפ',
     count: 1049,
     label: 'חברי קבוצה',
     color: '#25d366',
     href: 'https://whatsapp.com',
     cta: 'הצטרפו לקבוצה',
+    openJoinModal: true,
   },
 ]
 
 export default function Stats() {
+  const [joinModalOpen, setJoinModalOpen] = useState(false)
+
   return (
     <section className="stats-section" id="stats">
       <div className="container">
@@ -78,13 +83,25 @@ export default function Stats() {
               </div>
               <div className="stat-label">{p.label}</div>
               <div className="stat-platform">{p.name}</div>
-              <a href={p.href} target="_blank" rel="noreferrer" className="stat-cta">
-                {p.cta} →
-              </a>
+              {p.openJoinModal ? (
+                <a
+                  href="#join"
+                  className="stat-cta"
+                  onClick={(e) => { e.preventDefault(); setJoinModalOpen(true) }}
+                >
+                  {p.cta} →
+                </a>
+              ) : (
+                <a href={p.href} target="_blank" rel="noreferrer" className="stat-cta">
+                  {p.cta} →
+                </a>
+              )}
             </div>
           ))}
         </div>
       </div>
+
+      {joinModalOpen && <JoinModal onClose={() => setJoinModalOpen(false)} />}
     </section>
   )
 }
