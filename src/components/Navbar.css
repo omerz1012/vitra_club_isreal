@@ -148,7 +148,7 @@
   .nav-links {
     display: none;
     position: fixed;
-    top: 60px;
+    top: 112px;
     inset-inline: 0;
     flex-direction: column;
     background: rgba(15,20,18,0.98);
