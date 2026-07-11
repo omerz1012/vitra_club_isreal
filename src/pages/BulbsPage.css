@@ -26,6 +26,9 @@
 }
 
 .back-btn:hover { opacity: 0.7; }
+@media (max-width: 768px) {
+  .back-btn { position: static; transform: none; display: block; margin-top: 2.5rem; margin-bottom: 1rem; }
+}
 
 .bulbs-header h1 {
   font-size: 2.5rem;
@@ -157,11 +160,4 @@
 @media (max-width: 600px) {
   .bulbs-header h1 { font-size: 1.8rem; }
 
-  .back-btn {
-    position: static;
-    transform: none;
-    display: block;
-    margin-top: 2.5rem;
-    margin-bottom: 1rem;
-  }
 }
