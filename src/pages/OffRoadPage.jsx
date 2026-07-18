@@ -11,6 +11,13 @@ const tracks = [
   { title: 'הר חורשן, עין השופט, אליקים, מערת הפעמון, יער עופר.', url: 'http://off-road.io/track/6426854797606912' },
   { title: 'טיול מועדון סוכות 2024', url: 'https://off-road.io/track/4743839721455616' },
   { title: 'מאגר עורבים לבריכת רם', url: 'https://off-road.io/track/4685345281277952' },
+  { title: 'ממצוקי דרגות למרסבא', url: 'http://off-road.io/track/6299654744178688' },
+  { title: 'משדה בוקר למצפה רמון', url: 'http://off-road.io/track/6120584859353088' },
+  { title: 'מיער חרובית לתל צפית, מצפה משואה סיום בבית גוברין', url: 'http://off-road.io/track/6378959320907776' },
+  { title: 'ממסילת ציון, דרך בורמה סיום בצובה', url: 'http://off-road.io/track/5804932567138304' },
+  { title: 'סובב מכתש רמון מעגלי', url: 'http://off-road.io/track/5398293737373696' },
+  { title: 'נחל נקרות דרך הבשמים', url: 'http://off-road.io/track/5930524932308992' },
+  { title: 'סכיני דימונה אתגרי', url: 'http://off-road.io/track/6268152730877952' },
 ]
 
 export default function OffRoadPage() {

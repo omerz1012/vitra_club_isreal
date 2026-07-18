@@ -16,7 +16,7 @@ export default function Hero() {
         <div className="hero-badge">הקהילה הרשמית מאז 2016</div>
         <h1>
           קהילת בעלי<br />
-          <span>גרנד ויטרה</span><br />
+          <span>גרנד ויטרה 2006-2015</span><br />
           בישראל
         </h1>
         <p>
