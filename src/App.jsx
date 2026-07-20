@@ -1,5 +1,6 @@
 import { Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
+import ScrollToTop from './components/ScrollToTop'
 import Hero from './components/Hero'
 import Stats from './components/Stats'
 import InfoDatabase from './components/InfoDatabase'
@@ -47,6 +48,7 @@ function HomePage() {
 export default function App() {
   return (
     <>
+      <ScrollToTop />
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
