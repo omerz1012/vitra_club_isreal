@@ -403,7 +403,7 @@ export default function DrawingDetailPage() {
   return (
     <div className="drawing-detail-page" dir="rtl">
       <div className="drawing-detail-header">
-        <Link to="/info" className="back-btn">→ חזרה למאגר המידע</Link>
+        <Link to="/information/drawing" className="back-btn">→ חזרה לשרטוטים טכניים</Link>
         <h1>{title}</h1>
       </div>
       <div className="drawing-detail-container">

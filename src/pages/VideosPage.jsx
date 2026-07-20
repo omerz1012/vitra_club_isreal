@@ -26,6 +26,7 @@ const categories = [
       { id: '3j1ai4hA5hM', title: 'החלפת מוטות מקשרים' },
       { id: 'XTyI8g9BZDc', title: 'החלפת פילטר שמן מנוע 2.4' },
       { id: 'H8eHUnI4U_Y', title: 'החלפת נאבה' },
+      { id: 'Im2P_DnXF8Y', title: 'החלפת פילטר שמן סוזוקי גראנד ויטרה' },
     ],
   },
 ]

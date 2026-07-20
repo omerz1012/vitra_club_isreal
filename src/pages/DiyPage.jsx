@@ -1,5 +1,9 @@
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import DisclaimerModal from '../components/DisclaimerModal'
 import './DiyPage.css'
+
+const DISCLAIMER_KEY = 'diyDisclaimerApproved'
 
 const sections = [
   {
@@ -78,6 +82,17 @@ const sections = [
 const sourceUrl = 'https://understood-animal-519.notion.site/DIY-16dbd159c34d80209ee0e5b4e58e34e1?pvs=25'
 
 export default function DiyPage() {
+  const [approved, setApproved] = useState(() => localStorage.getItem(DISCLAIMER_KEY) === 'true')
+
+  const handleApprove = () => {
+    localStorage.setItem(DISCLAIMER_KEY, 'true')
+    setApproved(true)
+  }
+
+  if (!approved) {
+    return <DisclaimerModal onApprove={handleApprove} />
+  }
+
   return (
     <div className="diy-page" dir="rtl">
       <div className="diy-header">
