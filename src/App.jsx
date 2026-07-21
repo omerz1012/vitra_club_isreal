@@ -1,4 +1,5 @@
 import { Routes, Route } from 'react-router-dom'
+import { Analytics } from '@vercel/analytics/react'
 import Navbar from './components/Navbar'
 import ScrollToTop from './components/ScrollToTop'
 import Hero from './components/Hero'
@@ -73,6 +74,7 @@ export default function App() {
         <Route path="/information/diy" element={<DiyPage />} />
         <Route path="/deals" element={<DealsPage />} />
       </Routes>
+      <Analytics />
     </>
   )
 }
