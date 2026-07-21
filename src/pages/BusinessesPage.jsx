@@ -110,6 +110,7 @@ const businesses = [
     location: 'דרך העצמאות 16, יהוד',
     contact: 'דור | 054-5057868',
     maps: 'https://share.google/6e8LtkM6pDmuegZUa',
+    website: 'https://extremeoffroad.co.il/',
     note: 'קוד קופון 10% על כל האתר: GVTEAM10 (בהצגת חבר מועדון)',
   },
   {

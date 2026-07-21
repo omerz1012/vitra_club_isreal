@@ -8,11 +8,18 @@ const regions = [
     icon: '🏙️',
     tracks: [
       { title: 'נחל גוברין למאחז משלט, דרך חורבת בית לויה, קבר שייח עלי ומערות חזן.', url: 'http://off-road.io/track/6200615921516544' },
+      { title: 'מיער חרובית לתל צפית, מצפה משואה סיום בבית גוברין', url: 'http://off-road.io/track/6378959320907776' },
+    ],
+  },
+  {
+    key: 'jerusalem-hills',
+    label: 'הרי ירושלים',
+    icon: '🏔️',
+    tracks: [
       { title: 'מלטרון דרך נווה אילן, עין לימון וסיום בשער הגיא', url: 'http://off-road.io/track/4984898623897600' },
       { title: 'עמק האלה לבית גוברין', url: 'http://off-road.io/track/6145620568440832' },
       { title: 'מצפור שער הגיא עד מאגר מסילת ציון', url: 'http://off-road.io/track/4940383186845696' },
       { title: 'נחל דולב לחירבת חנות', url: 'http://off-road.io/track/5214096560226304' },
-      { title: 'מיער חרובית לתל צפית, מצפה משואה סיום בבית גוברין', url: 'http://off-road.io/track/6378959320907776' },
       { title: 'ממסילת ציון, דרך בורמה סיום בצובה', url: 'http://off-road.io/track/5804932567138304' },
     ],
   },

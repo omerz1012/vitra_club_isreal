@@ -5,7 +5,7 @@ import './CodeGate.css'
 const STORAGE_KEY = 'vitra_page_access_unlocked'
 
 export default function CodeGate({ children }) {
-  const [unlocked, setUnlocked] = useState(() => localStorage.getItem(STORAGE_KEY) === 'true')
+  const [unlocked, setUnlocked] = useState(() => localStorage.getItem(STORAGE_KEY) === PAGE_ACCESS_CODE.toUpperCase())
   const [input, setInput] = useState('')
   const [error, setError] = useState(false)
 
@@ -21,7 +21,7 @@ export default function CodeGate({ children }) {
   const handleSubmit = (e) => {
     e.preventDefault()
     if (input.trim().toUpperCase() === PAGE_ACCESS_CODE.toUpperCase()) {
-      localStorage.setItem(STORAGE_KEY, 'true')
+      localStorage.setItem(STORAGE_KEY, PAGE_ACCESS_CODE.toUpperCase())
       setUnlocked(true)
     } else {
       setError(true)
