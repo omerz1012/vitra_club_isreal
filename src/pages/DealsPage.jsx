@@ -44,6 +44,13 @@ const deals = [
 
 export default function DealsPage() {
   const [openIndex, setOpenIndex] = useState(null)
+  const [copiedIndex, setCopiedIndex] = useState(null)
+
+  const copyCode = (index, code) => {
+    navigator.clipboard.writeText(code)
+    setCopiedIndex(index)
+    setTimeout(() => setCopiedIndex(null), 2000)
+  }
 
   return (
     <div className="deals-page" dir="rtl">
@@ -67,7 +74,21 @@ export default function DealsPage() {
                   onClick={() => setOpenIndex(isOpen ? null : i)}
                 >
                   <img src={d.image} alt={d.title} className="deal-image" />
-                  <h2 className="deal-title">{d.title}</h2>
+                  <div className="deal-title-row">
+                    <h2 className="deal-title">{d.title}</h2>
+                    {d.code && (
+                      <button
+                        className="deal-code-btn"
+                        onClick={(e) => {
+                          e.stopPropagation()
+                          copyCode(i, d.code)
+                        }}
+                      >
+                        <span className="deal-code-text">{d.code}</span>
+                        <span className="deal-copy-label">{copiedIndex === i ? '✓ הועתק' : 'העתק קוד'}</span>
+                      </button>
+                    )}
+                  </div>
                   {isOpen && <p className="deal-description">{d.description}</p>}
                 </div>
               )

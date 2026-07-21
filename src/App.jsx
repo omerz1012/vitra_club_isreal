@@ -9,6 +9,7 @@ import Videos from './components/Videos'
 import Gallery from './components/Gallery'
 import Partners from './components/Partners'
 import Footer from './components/Footer'
+import CodeGate from './components/CodeGate'
 import MaintenancePage from './pages/MaintenancePage'
 import OilsPage from './pages/OilsPage'
 import BulbsPage from './pages/BulbsPage'
@@ -60,7 +61,7 @@ export default function App() {
         <Route path="/information/radio-frequencies" element={<RadioPage />} />
         <Route path="/information/recommended-businesses" element={<BusinessesPage />} />
         <Route path="/information/club-businesses" element={<ClubBusinessesPage />} />
-        <Route path="/information/coupons" element={<CouponsPage />} />
+        <Route path="/information/coupons" element={<CodeGate><CouponsPage /></CodeGate>} />
         <Route path="/information/off-road" element={<OffRoadPage />} />
         <Route path="/videos" element={<VideosPage />} />
         <Route path="/about" element={<AboutPage />} />
@@ -72,7 +73,7 @@ export default function App() {
         <Route path="/information/drawing/:slug" element={<DrawingDetailPage />} />
         <Route path="/information/parts-numbers" element={<PartsNumbersPage />} />
         <Route path="/information/diy" element={<DiyPage />} />
-        <Route path="/deals" element={<DealsPage />} />
+        <Route path="/deals" element={<CodeGate><DealsPage /></CodeGate>} />
       </Routes>
       <Analytics />
     </>

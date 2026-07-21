@@ -1,0 +1,71 @@
+.code-gate-overlay {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(15, 20, 18, 0.93);
+  padding: 20px;
+}
+
+.code-gate {
+  position: relative;
+  width: 100%;
+  max-width: 420px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 32px 24px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  text-align: center;
+}
+
+.code-gate-text {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.code-gate-subtext {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.code-gate-input {
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--bg-card2);
+  color: #fff;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.code-gate-input:focus {
+  outline: none;
+  border-color: var(--green-light);
+}
+
+.code-gate-error {
+  color: #e05c5c;
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+.code-gate-btn {
+  background: var(--green);
+  color: #fff;
+  font-weight: 700;
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.code-gate-btn:hover {
+  background: var(--green-light);
+}
