@@ -49,7 +49,7 @@
 .biz-table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 0.88rem;
+  font-size: 1rem;
   direction: rtl;
   background: var(--bg-card);
   border-radius: 12px;
@@ -114,7 +114,7 @@
 
 .loc-cell {
   color: #aaa;
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   min-width: 150px;
 }
 
@@ -127,7 +127,7 @@
 
 .contact-line {
   color: #ccc;
-  font-size: 0.83rem;
+  font-size: 0.93rem;
   white-space: nowrap;
 }
 
@@ -154,7 +154,7 @@
 .note-cell { min-width: 180px; }
 
 .note-text {
-  font-size: 0.82rem;
+  font-size: 0.92rem;
   color: #c8a84b;
   line-height: 1.5;
 }
