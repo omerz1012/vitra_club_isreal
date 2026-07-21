@@ -8,6 +8,7 @@ const businesses = [
     location: 'דרך בן צבי 11, תל אביב',
     contact: 'טל | 053-5553071',
     maps: 'https://www.google.com/maps/search/?api=1&query=%D7%93%D7%A8%D7%9A%20%D7%91%D7%9F%20%D7%A6%D7%91%D7%99%2011%2C%20%D7%AA%D7%9C%20%D7%90%D7%91%D7%99%D7%91',
+    website: 'https://share.google/uCFzwjztTRfio0QZY',
   },
   {
     name: 'רביע שירותי רכב',
@@ -15,6 +16,7 @@ const businesses = [
     location: 'כפר יאסיף',
     contact: 'רביע | 052-738-0445',
     maps: 'https://maps.app.goo.gl/5v2kBBaYMpNYyWT1A',
+    website: 'https://share.google/8BGxWndvmzI0PZnCJ',
   },
   {
     name: 'רדיאטור רחובות',
@@ -22,6 +24,7 @@ const businesses = [
     location: 'משה יתום 6, רחובות',
     contact: '053-4244428 | 08-9461911',
     maps: 'https://www.google.com/maps/search/?api=1&query=%D7%9E%D7%A9%D7%94%20%D7%99%D7%AA%D7%95%D7%9D%206%2C%20%D7%A8%D7%97%D7%95%D7%91%D7%95%D7%AA',
+    website: 'https://share.google/A8n2QCs0YZrfLFHZn',
   },
   {
     name: 'סוזוקי עפולה',
@@ -29,6 +32,7 @@ const businesses = [
     location: 'החרמש 12, עפולה',
     contact: 'עביר | 054-7422611',
     maps: 'https://www.google.com/maps/search/?api=1&query=%D7%9E%D7%A9%D7%94%20%D7%99%D7%AA%D7%95%D7%9D%206%2C%20%D7%A8%D7%97%D7%95%D7%91%D7%95%D7%AA',
+    website: 'https://share.google/Km3tNGU1GvXotJ1wL',
   },
   {
     name: 'אוטופוינט',
@@ -36,6 +40,7 @@ const businesses = [
     location: 'האומן 1, יבנה',
     contact: 'בר | 054-337-3883',
     maps: 'https://www.google.com/maps/search/?api=1&query=%D7%94%D7%90%D7%95%D7%9E%D7%9F%201%2C%20%D7%99%D7%91%D7%A0%D7%94',
+    website: 'https://www.otopoint.co.il',
   },
   {
     name: "ג'וזף",
@@ -43,12 +48,14 @@ const businesses = [
     location: 'אלטלף 9, יהוד',
     contact: '050-8528483',
     maps: 'https://www.google.com/maps/search/?api=1&query=%D7%90%D7%9C%D7%98%D7%9C%D7%A3%209%2C%20%D7%99%D7%94%D7%95%D7%93',
+    website: 'https://joseph-car-shop.co.il',
   },
   {
     name: 'פירסטקאר',
     type: 'אביזרים לרכב',
     location: 'ברטעה',
     contact: 'עמאר | 054-285-5441',
+    website: 'https://www.firstcar4x4.com',
   },
   {
     name: 'ENL ייבוא ושיווק',
@@ -56,12 +63,14 @@ const businesses = [
     location: 'הברוש 27, פתחיה',
     contact: 'נתי, אלירן | 050-2106437 | 052-6781206',
     maps: 'https://www.google.com/maps/search/?api=1&query=%D7%94%D7%91%D7%A8%D7%95%D7%A9%2027%2C%20%D7%A4%D7%AA%D7%97%D7%99%D7%94',
+    website: 'https://www.enl4x4.co.il',
   },
   {
     name: 'צמיגי מוריס',
     type: "פנצ'ריות",
     location: 'צומת בית עובד',
     contact: 'גילי, אסף | 052-2891327 | 052-3490008',
+    website: 'https://share.google/cmdm2BGfKknGtsX2X',
   },
   {
     name: 'צמיגי פרונט יוסף',
@@ -69,6 +78,7 @@ const businesses = [
     location: 'אור יהודה- דרך לוד 5, יהוד- אלטלף 9',
     contact: '03-634-1015',
     note: 'כיוון סרן בודד - 300 | שני סרנים - 400 | לחברי המועדון | המחירים כוללים מע"מ',
+    website: 'https://share.google/jaQ06v8gN9sk2zP75',
   },
   {
     name: 'פרונט אלשיך',
@@ -76,6 +86,7 @@ const businesses = [
     location: 'שדרות הרצל 6, רמלה',
     contact: 'נור | 054-4460309',
     note: 'לחברי מועדון, מחיר לסרן, ללא בורג כיוון - 200 ש"ח + מע"מ',
+    website: 'https://share.google/mBtr1uXVGpCKnf2Ul',
   },
   {
     name: "פרונט ג'מאל טועמה",
@@ -83,6 +94,7 @@ const businesses = [
     location: 'שיש 9, עכו',
     contact: 'אדוארד | 050-2594832',
     maps: 'https://www.google.com/maps/search/?api=1&query=%D7%A9%D7%93%D7%A8%D7%95%D7%AA%20%D7%94%D7%A8%D7%A6%D7%9C%206%2C%20%D7%A8%D7%9E%D7%9C%D7%94',
+    website: 'https://share.google/rpTYTRfcjqgE4vg2Z',
   },
   {
     name: 'PRODX הנטר פרונט',
@@ -90,6 +102,7 @@ const businesses = [
     location: 'מקלף 30, חיפה',
     contact: 'נתי, אביב | 054-5813-031 | 054-580-1991',
     maps: 'https://www.google.com/maps/search/?api=1&query=%D7%A9%D7%99%D7%A9%209%2C%20%D7%A2%D7%9B%D7%95',
+    website: 'https://share.google/GDFrSVT3MkBZKUqOA',
   },
   {
     name: 'שטח אקסטרים',
@@ -145,7 +158,12 @@ export default function BusinessesPage() {
             {businesses.map((b, i) => (
               <tr key={b.name}>
                 <td className="num-cell">{i + 1}</td>
-                <td className="name-cell">{b.name}</td>
+                <td className="name-cell">
+                  {b.website
+                    ? <a href={b.website} target="_blank" rel="noopener noreferrer" className="biz-name-link">{b.name}</a>
+                    : b.name
+                  }
+                </td>
                 <td>
                   <span
                     className="type-badge"

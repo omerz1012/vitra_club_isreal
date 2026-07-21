@@ -48,6 +48,24 @@
   padding: 1.5rem;
 }
 
+.offroad-region {
+  margin-bottom: 2rem;
+}
+
+.offroad-region:last-child {
+  margin-bottom: 0;
+}
+
+.offroad-region-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 0 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 .offroad-list {
   display: flex;
   flex-direction: column;
