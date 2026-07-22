@@ -22,6 +22,13 @@ const coupons = [
     website: 'https://www.firstcar4x4.com/',
     code: 'SUZUKIFC14',
   },
+  {
+    business: 'Joseph',
+    type: 'מוסך ושירותי רכב',
+    image: '/yosef-car-shop-logo-e1655316711894.png',
+    website: 'https://joseph-car-shop.co.il/',
+    code: 'GVCLUB10',
+  },
 ]
 
 function CouponCard({ coupon }) {
