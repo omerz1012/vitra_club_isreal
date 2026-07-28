@@ -21,6 +21,7 @@ const coupons = [
     image: '/first_car_logo.avif',
     website: 'https://www.firstcar4x4.com/',
     code: 'SUZUKIFC14',
+    discount: '14%',
   },
   {
     business: 'Joseph',
@@ -28,6 +29,7 @@ const coupons = [
     image: '/yosef-car-shop-logo-e1655316711894.png',
     website: 'https://joseph-car-shop.co.il/',
     code: 'GVCLUB10',
+    discount: '10%',
   },
 ]
 
