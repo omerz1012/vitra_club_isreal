@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { news } from '../data/news'
+import Linkify from '../components/Linkify'
 import './NewsPage.css'
 
 export default function NewsPage() {
@@ -32,7 +33,7 @@ export default function NewsPage() {
                     <h2 className="news-title">{n.title}</h2>
                     {n.date && <span className="news-date">{n.date}</span>}
                   </div>
-                  {isOpen && <p className="news-description">{n.description}</p>}
+                  {isOpen && <p className="news-description"><Linkify text={n.description} /></p>}
                 </div>
               )
             })}

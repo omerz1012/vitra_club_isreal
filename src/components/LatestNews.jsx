@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom'
 import { news } from '../data/news'
+import Linkify from './Linkify'
 import './LatestNews.css'
 
 export default function LatestNews() {
@@ -21,7 +22,7 @@ export default function LatestNews() {
               <h3>{latest.title}</h3>
               {latest.date && <span className="latest-news-date">{latest.date}</span>}
             </div>
-            <p>{latest.description}</p>
+            <p><Linkify text={latest.description} /></p>
           </div>
         </div>
 

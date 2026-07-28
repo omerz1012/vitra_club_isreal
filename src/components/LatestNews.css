@@ -68,6 +68,11 @@
   overflow: hidden;
 }
 
+.latest-news-body p a {
+  color: var(--green-light);
+  font-weight: 600;
+}
+
 .latest-news-more {
   display: block;
   margin: 24px auto 0;
