@@ -38,7 +38,7 @@ const platforms = [
   {
     icon: <FaFacebook />,
     name: 'פייסבוק',
-    count: 6383,
+    count: 6400,
     label: 'חברים בקבוצה',
     color: '#1877f2',
     href: 'https://www.facebook.com/share/g/1PKeizgd1F/',
@@ -47,7 +47,7 @@ const platforms = [
   {
     icon: <FaInstagram />,
     name: 'אינסטגרם',
-    count: 1577,
+    count: 1660,
     label: 'עוקבים',
     color: '#e1306c',
     href: 'https://www.instagram.com/gv4x4_israel_team?igsh=aWpyZWJ4czZ2cTA0',
@@ -56,7 +56,7 @@ const platforms = [
   {
     icon: <FaWhatsapp />,
     name: 'וואטסאפ',
-    count: 1049,
+    count: 1050,
     label: 'חברי קבוצה',
     color: '#25d366',
     href: 'https://whatsapp.com',

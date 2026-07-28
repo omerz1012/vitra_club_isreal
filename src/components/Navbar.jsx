@@ -6,6 +6,7 @@ import './Navbar.css'
 const links = [
   { label: 'בית', href: '/' },
   { label: 'אודות', href: '/about' },
+  { label: 'חדשות', href: '/news' },
   { label: 'מאגר מידע', href: '/info' },
   { label: 'מבצעים', href: '/deals' },
   { label: 'תקנון', href: '/takanon' },

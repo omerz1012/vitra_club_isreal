@@ -4,6 +4,7 @@ import Navbar from './components/Navbar'
 import ScrollToTop from './components/ScrollToTop'
 import Hero from './components/Hero'
 import Stats from './components/Stats'
+import LatestNews from './components/LatestNews'
 import InfoDatabase from './components/InfoDatabase'
 import Videos from './components/Videos'
 import Gallery from './components/Gallery'
@@ -30,6 +31,7 @@ import DrawingDetailPage from './pages/DrawingDetailPage'
 import PartsNumbersPage from './pages/PartsNumbersPage'
 import DiyPage from './pages/DiyPage'
 import DealsPage from './pages/DealsPage'
+import NewsPage from './pages/NewsPage'
 
 function HomePage() {
   return (
@@ -37,6 +39,7 @@ function HomePage() {
       <main>
         <Hero />
         <Stats />
+        <LatestNews />
         <InfoDatabase />
         <Videos />
         <Gallery />
@@ -74,6 +77,7 @@ export default function App() {
         <Route path="/information/parts-numbers" element={<PartsNumbersPage />} />
         <Route path="/information/diy" element={<DiyPage />} />
         <Route path="/deals" element={<CodeGate><DealsPage /></CodeGate>} />
+        <Route path="/news" element={<NewsPage />} />
       </Routes>
       <Analytics />
     </>
