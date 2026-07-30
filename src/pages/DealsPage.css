@@ -135,6 +135,16 @@
   white-space: pre-wrap;
 }
 
+.deal-description a {
+  color: var(--green-light);
+  font-weight: 600;
+  word-break: break-all;
+}
+
+.deal-description a:hover {
+  text-decoration: none;
+}
+
 @media (max-width: 600px) {
   .deals-header h1 { font-size: 1.8rem; }
 

@@ -1,11 +1,12 @@
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { news } from '../data/news'
 import Linkify from '../components/Linkify'
 import './NewsPage.css'
 
 export default function NewsPage() {
   const [openIndex, setOpenIndex] = useState(null)
+  const navigate = useNavigate()
 
   return (
     <div className="news-page" dir="rtl">
@@ -26,7 +27,7 @@ export default function NewsPage() {
                 <div
                   key={i}
                   className={`news-card${isOpen ? ' open' : ''}`}
-                  onClick={() => setOpenIndex(isOpen ? null : i)}
+                  onClick={() => n.linkTo ? navigate(n.linkTo) : setOpenIndex(isOpen ? null : i)}
                 >
                   {n.image && <img src={n.image} alt={n.title} className="news-image" />}
                   <div className="news-title-row">

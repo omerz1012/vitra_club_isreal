@@ -2,6 +2,14 @@
   background: linear-gradient(180deg, rgba(15, 20, 18, 0.93) 0%, rgba(17, 26, 15, 0.93) 100%);
 }
 
+.latest-news-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
 .latest-news-card {
   display: flex;
   align-items: stretch;
@@ -11,8 +19,6 @@
   border-radius: var(--radius);
   overflow: hidden;
   cursor: pointer;
-  max-width: 700px;
-  margin: 0 auto;
   transition: transform 0.25s, box-shadow 0.25s, border-color 0.2s;
 }
 

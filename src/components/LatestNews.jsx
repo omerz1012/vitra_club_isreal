@@ -8,22 +8,24 @@ export default function LatestNews() {
 
   if (news.length === 0) return null
 
-  const latest = news[0]
-
   return (
     <section className="latest-news-section" id="news">
       <div className="container">
         <h2 className="section-title">חדשות <span>המועדון</span></h2>
 
-        <div className="latest-news-card" onClick={() => navigate('/news')}>
-          {latest.image && <img src={latest.image} alt={latest.title} className="latest-news-image" />}
-          <div className="latest-news-body">
-            <div className="latest-news-title-row">
-              <h3>{latest.title}</h3>
-              {latest.date && <span className="latest-news-date">{latest.date}</span>}
+        <div className="latest-news-list">
+          {news.slice(0, 2).map((n, i) => (
+            <div key={i} className="latest-news-card" onClick={() => navigate(n.linkTo || '/news')}>
+              {n.image && <img src={n.image} alt={n.title} className="latest-news-image" />}
+              <div className="latest-news-body">
+                <div className="latest-news-title-row">
+                  <h3>{n.title}</h3>
+                  {n.date && <span className="latest-news-date">{n.date}</span>}
+                </div>
+                <p><Linkify text={n.description} /></p>
+              </div>
             </div>
-            <p><Linkify text={latest.description} /></p>
-          </div>
+          ))}
         </div>
 
         <button className="latest-news-more" onClick={() => navigate('/news')}>
