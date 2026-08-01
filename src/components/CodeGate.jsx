@@ -31,7 +31,11 @@ export default function CodeGate({ children }) {
   return (
     <div className="code-gate-overlay" dir="rtl">
       <form className="code-gate" onSubmit={handleSubmit}>
-        <p className="code-gate-text">הדף מיועד לחברי מועדון בלבד</p>
+        <p className="code-gate-text">
+          הדף מיועד לחברי מועדון 
+          <br />
+בעלי כרטיס חבר בלבד !
+          </p>
         <p className="code-gate-subtext">הזן את קוד המועדון כדי להמשיך</p>
         <input
           className="code-gate-input"
