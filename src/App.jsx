@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router-dom'
 import { Analytics } from '@vercel/analytics/react'
 import Navbar from './components/Navbar'
 import ScrollToTop from './components/ScrollToTop'
+import LaunchCelebration from './components/LaunchCelebration'
 import Hero from './components/Hero'
 import Stats from './components/Stats'
 import LatestNews from './components/LatestNews'
@@ -54,6 +55,7 @@ export default function App() {
   return (
     <>
       <ScrollToTop />
+      <LaunchCelebration />
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
