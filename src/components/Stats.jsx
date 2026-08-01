@@ -50,7 +50,7 @@ const platforms = [
     count: 1660,
     label: 'עוקבים',
     color: '#e1306c',
-    href: 'https://www.instagram.com/gv4x4_israel_team?igsh=aWpyZWJ4czZ2cTA0',
+    href: 'https://www.instagram.com/gv4x4_israel?igsh=MW1rMTNqcmFyd3lnbw==',
     cta: 'עקבו אחרינו',
   },
   {
