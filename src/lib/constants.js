@@ -1,1 +1,1 @@
-export const PAGE_ACCESS_CODE = 'GVTCODE1';
+export const PAGE_ACCESS_CODE = 'GVTCODE2';
