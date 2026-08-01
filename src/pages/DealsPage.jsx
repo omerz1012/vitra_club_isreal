@@ -20,6 +20,7 @@ const deals = [
 אל תפספסו את ההזדמנות להצטייד במחירים מיוחדים לכבוד השקת האתר!
 
 https://www.firstcar4x4.com/`,
+    note: 'ההנחה לבעלי כרטיס חבר מועדון בלבד!',
   },
 ]
 
@@ -70,7 +71,12 @@ export default function DealsPage() {
                       </button>
                     )}
                   </div>
-                  {isOpen && <p className="deal-description"><Linkify text={d.description} /></p>}
+                  {isOpen && (
+                    <p className="deal-description">
+                      <Linkify text={d.description} />
+                      {d.note && <><br /><br /><strong>{d.note}</strong></>}
+                    </p>
+                  )}
                 </div>
               )
             })}

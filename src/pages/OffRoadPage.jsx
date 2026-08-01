@@ -32,6 +32,7 @@ const regions = [
       { title: 'הר חורשן, עין השופט, אליקים, מערת הפעמון, יער עופר.', url: 'http://off-road.io/track/6426854797606912' },
       { title: 'טיול מועדון סוכות 2024', url: 'https://off-road.io/track/4743839721455616' },
       { title: 'מאגר עורבים לבריכת רם', url: 'https://off-road.io/track/4685345281277952' },
+      { title: 'גן לאומי כורזים, הירדן הררי, עין ליאור ונחל עמוד', url: 'http://off-road.io/track/4618306186903552' },
     ],
   },
   {
