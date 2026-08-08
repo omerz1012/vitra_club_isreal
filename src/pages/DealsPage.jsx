@@ -3,26 +3,7 @@ import { Link } from 'react-router-dom'
 import Linkify from '../components/Linkify'
 import './DealsPage.css'
 
-const deals = [
-  {
-    title: '🎉 מבצעי השקת אתר המועדון 🎉',
-    image: '/deal_start.jpeg',
-    code: 'NEWGV4X4',
-    description: `בשיתוף פירסט קאר ברטעה, הכנו עבורכם הטבות בלעדיות:
-
-✅ 15% הנחה על כל האתר באמצעות קוד קופון ייעודי לחברי המועדון.
-✅ שנורקל במחיר מטורף
-✅ גגוני עריסה במחירי רצפה.
-✅ ועוד המון מוצרים וציוד במחירים מיוחדים שלא כדאי לפספס!
-
-⏳ שימו לב ❤️ - המבצעים בתוקף למשך שבוע בלבד, עד לתאריך 8.8.2026.
-
-אל תפספסו את ההזדמנות להצטייד במחירים מיוחדים לכבוד השקת האתר!
-
-https://www.firstcar4x4.com/`,
-    note: 'ההנחה לבעלי כרטיס חבר מועדון בלבד!',
-  },
-]
+const deals = []
 
 export default function DealsPage() {
   const [openIndex, setOpenIndex] = useState(null)
