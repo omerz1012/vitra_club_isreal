@@ -23,7 +23,6 @@ const sections = [
 
 const standalone = [
   { label: 'הגבהות מומלצות', slug: 'recommended-lifts' },
-  { label: 'מערכות שמן הגהה', slug: 'steering-oil-systems' },
   { label: 'פס גגון', slug: 'roof-rack-bar' },
   { label: 'רצועת אביזרים', slug: 'accessories-belt' },
 ]

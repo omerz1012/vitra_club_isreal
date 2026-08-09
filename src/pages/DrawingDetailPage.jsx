@@ -10,7 +10,6 @@ const titleBySlug = {
   'throttle-cooling-pipes-2-4': 'צינורות קירור מצערת מנוע 2.4',
   'valve-cover-gasket-2-4': 'אטם מכסה שסתומים 2.4',
   'recommended-lifts': 'הגבהות מומלצות',
-  'steering-oil-systems': 'מערכות שמן הגהה',
   'roof-rack-bar': 'פס גגון',
   'accessories-belt': 'רצועת אביזרים',
 }
@@ -223,54 +222,6 @@ function RoofRackBarContent() {
   )
 }
 
-function SteeringOilSystemsContent() {
-  const parts = [
-    { number: '49140-65J00', name: 'TANK ASSY', ref: 8, engine24: true, engine20: true },
-    { number: '49214-78K00', name: 'OIL HOSE', ref: 16, engine24: true, engine20: false, note: '2.4' },
-    { number: '49214-65J00', name: 'OIL HOSE', ref: 16, engine24: false, engine20: true, note: '2.0' },
-  ]
-  return (
-    <>
-      <div className="drawing-detail-image-wrap">
-        <img src="/steering-oil-systems.webp" alt="מערכות שמן הגה" className="drawing-detail-image" />
-      </div>
-      <div className="drawing-detail-table-wrap">
-        <table className="parts-table">
-          <thead>
-            <tr>
-              <th>מס׳ רכיב</th>
-              <th>שם</th>
-              <th>קוד</th>
-              <th>2.4</th>
-              <th>2.0</th>
-            </tr>
-          </thead>
-          <tbody>
-            {parts.map((part, i) => (
-              <tr key={i}>
-                <td>
-                  <a
-                    href={`https://partsouq.com/en/search/all?q=${part.number}&qty=1&view=table-once`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="part-number-link"
-                  >
-                    {part.number}
-                  </a>
-                </td>
-                <td>{part.name}</td>
-                <td className="part-ref">{part.ref}</td>
-                <td>{part.engine24 ? '✓' : '—'}</td>
-                <td>{part.engine20 ? '✓' : '—'}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
-    </>
-  )
-}
-
 function RecommendedLiftsContent() {
   return (
     <>
@@ -390,7 +341,6 @@ const contentBySlug = {
   'throttle-cooling-pipes-2-4': ThrottleCoolingPipes24Content,
   'valve-cover-gasket-2-4': ValveCoverGasket24Content,
   'recommended-lifts': RecommendedLiftsContent,
-  'steering-oil-systems': SteeringOilSystemsContent,
   'roof-rack-bar': RoofRackBarContent,
   'accessories-belt': AccessoriesBeltContent,
 }

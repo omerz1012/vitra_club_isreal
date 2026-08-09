@@ -27,14 +27,6 @@ const fluids = [
     mopar: 'לפי יצרן',
   },
   {
-    icon: '🏎️',
-    title: 'שמן גשר קדמי / אחורי',
-    capacity: '0.95L / 0.8L',
-    spec: 'API GL-5 (SAE 80W-90)',
-    products: ['Pazrex 80W-90HD', 'Sunolgear 4090', 'ESSO GEAR OIL GX 80W-90'],
-    mopar: '04874468',
-  },
-  {
     icon: '🌡️',
     title: 'נוזל קירור',
     capacity: '7.3L',
