@@ -78,7 +78,7 @@ export default function App() {
         <Route path="/information/drawing/:slug" element={<DrawingDetailPage />} />
         <Route path="/information/parts-numbers" element={<PartsNumbersPage />} />
         <Route path="/information/diy" element={<DiyPage />} />
-        <Route path="/deals" element={<CodeGate><DealsPage /></CodeGate>} />
+        <Route path="/deals" element={<DealsPage />} />
         <Route path="/news" element={<NewsPage />} />
       </Routes>
       <Analytics />
