@@ -13,6 +13,7 @@ const categories = [
   { icon: '📋', title: 'בתי עסק', desc: 'גרז\'ים ובתי עסק מומלצים לגרנד ויטרה', route: '/information/recommended-businesses' },
   { icon: '⭐', title: 'בעלי עסקים מומלצים', desc: 'עסקים של חברי המועדון — שירותים בין חברים', route: '/information/club-businesses' },
   { icon: '🎟️', title: 'קודי קופון', desc: 'הנחות בלעדיות לחברי המועדון', route: '/information/coupons' },
+  { icon: '🤝', title: 'כרטיס חבר מועדון', desc: 'הטבות ומבצעים בלעדיים לחברי המועדון', route: '/friends-club' },
   { icon: '🗺️', title: 'מסלולי שטח', desc: 'מסלולים מומלצים לנסיעות שטח בישראל', route: '/information/off-road' },
   { icon: '🎬', title: 'סרטונים', desc: 'סרטונים נבחרים מהקהילה ועל הרכב', route: '/videos' },
   { icon: '📖', title: 'שאל את החוברת האינטראקטיבית', desc: 'שאל שאלות וקבל תשובות מהחוברת האינטראקטיבית של הקהילה', url: 'https://notebooklm.google.com/notebook/9696a696-65f0-4db1-91de-d671880ca7b4' },
@@ -36,7 +37,7 @@ export default function InfoDatabase() {
     <section className="database-section" id="database">
       <div className="container">
         <h2 className="section-title">מאגר <span>המידע</span></h2>
-        <p className="section-subtitle">15 קטגוריות של מידע מקצועי ומקיף לבעלי גרנד ויטרה</p>
+        <p className="section-subtitle">16 קטגוריות של מידע מקצועי ומקיף לבעלי גרנד ויטרה</p>
 
         <div className="db-grid">
           {categories.map((cat, i) => (

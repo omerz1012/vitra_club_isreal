@@ -4,6 +4,7 @@ import Navbar from './components/Navbar'
 import ScrollToTop from './components/ScrollToTop'
 import LaunchCelebration from './components/LaunchCelebration'
 import Hero from './components/Hero'
+import FriendsClubCta from './components/FriendsClubCta'
 import Stats from './components/Stats'
 import LatestNews from './components/LatestNews'
 import InfoDatabase from './components/InfoDatabase'
@@ -32,6 +33,7 @@ import DrawingDetailPage from './pages/DrawingDetailPage'
 import PartsNumbersPage from './pages/PartsNumbersPage'
 import DiyPage from './pages/DiyPage'
 import DealsPage from './pages/DealsPage'
+import FriendsClubPage from './pages/FriendsClubPage'
 import NewsPage from './pages/NewsPage'
 
 function HomePage() {
@@ -39,6 +41,7 @@ function HomePage() {
     <>
       <main>
         <Hero />
+        <FriendsClubCta />
         <Stats />
         <LatestNews />
         <InfoDatabase />
@@ -79,6 +82,7 @@ export default function App() {
         <Route path="/information/parts-numbers" element={<PartsNumbersPage />} />
         <Route path="/information/diy" element={<DiyPage />} />
         <Route path="/deals" element={<DealsPage />} />
+        <Route path="/friends-club" element={<CodeGate><FriendsClubPage /></CodeGate>} />
         <Route path="/news" element={<NewsPage />} />
       </Routes>
       <Analytics />

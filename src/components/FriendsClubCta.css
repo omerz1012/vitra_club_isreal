@@ -1,0 +1,52 @@
+.friends-club-cta-wrap {
+  display: flex;
+  justify-content: center;
+  padding: 36px 20px;
+  background: var(--bg-dark);
+}
+
+.friends-club-cta-btn {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: linear-gradient(135deg, var(--green) 0%, var(--green-light) 100%);
+  color: #fff;
+  border: none;
+  padding: 10px 32px 10px 10px;
+  border-radius: 100px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 4px 20px rgba(46,125,50,0.35);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.friends-club-cta-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 28px rgba(46,125,50,0.5);
+}
+
+.friends-club-cta-img {
+  width: 64px;
+  height: 44px;
+  border-radius: 8px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.friends-club-cta-text {
+  white-space: nowrap;
+}
+
+@media (max-width: 600px) {
+  .friends-club-cta-btn {
+    font-size: 0.95rem;
+    padding: 8px 24px 8px 8px;
+    gap: 12px;
+  }
+
+  .friends-club-cta-img {
+    width: 52px;
+    height: 36px;
+  }
+}
