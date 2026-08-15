@@ -126,6 +126,7 @@ const businesses = [
     location: 'הירדן 19, תל מונד',
     contact: 'גלי | 052-2421392',
     maps: 'https://www.google.com/maps/search/?api=1&query=%D7%94%D7%99%D7%A8%D7%93%D7%9F%2019%2C%20%D7%AA%D7%9C%20%D7%9E%D7%95%D7%A0%D7%93',
+    website: 'https://www.glitz.co.il',
     note: 'כיסוי גלגל ממותג לוגו מועדון - 399 ש"ח | דגל מועדון ממותג כולל מוט - 99 ש"ח',
   },
 ]
