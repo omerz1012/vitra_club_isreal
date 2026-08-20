@@ -54,11 +54,22 @@ export default function Navbar() {
           </li>
         </ul>
 
-        <button className="hamburger" onClick={() => setOpen(o => !o)} aria-label="תפריט">
-          <span className={open ? 'open' : ''} />
-          <span className={open ? 'open' : ''} />
-          <span className={open ? 'open' : ''} />
-        </button>
+        <div className="nav-mobile-bar">
+          <button
+            className="nav-mobile-cta"
+            onClick={() => { setOpen(false); navigate('/friends-club') }}
+            dir="ltr"
+          >
+            <img src="/club_image.png" alt="כרטיס חבר מועדון" className="nav-mobile-cta-img" />
+            <span>כניסה לכרטיס חבר מועדון ←</span>
+          </button>
+
+          <button className="hamburger" onClick={() => setOpen(o => !o)} aria-label="תפריט">
+            <span className={open ? 'open' : ''} />
+            <span className={open ? 'open' : ''} />
+            <span className={open ? 'open' : ''} />
+          </button>
+        </div>
       </div>
 
       {joinModalOpen && <JoinModal onClose={() => setJoinModalOpen(false)} />}

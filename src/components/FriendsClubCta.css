@@ -50,3 +50,9 @@
     height: 36px;
   }
 }
+
+@media (max-width: 768px) {
+  .friends-club-cta-wrap {
+    display: none;
+  }
+}

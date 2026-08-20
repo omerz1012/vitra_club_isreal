@@ -12,7 +12,7 @@ const fluids = [
   },
   {
     icon: '⚙️',
-    title: 'שמן גיר ידני',
+    title: 'שמן דיפרנציאל/טרנספר',
     capacity: '1.5L',
     spec: 'API GL-4 (SAE 75W-90)',
     products: ['Paz Synt Gear 75W/90', 'Sunol 75W/90', 'ESSO GEAR OIL GP 75W-90'],
