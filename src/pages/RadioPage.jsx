@@ -30,7 +30,7 @@ const europeanFRS = [
   { ch: 8, freq: '446.09375' },
 ]
 
-const CLUB_FREQ = '446.660'
+const CLUB_FREQ = '444.660'
 
 export default function RadioPage() {
   return (

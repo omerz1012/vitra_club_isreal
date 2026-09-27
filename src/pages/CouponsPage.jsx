@@ -19,7 +19,7 @@ const coupons = [
     business: 'First Car 4X4',
     type: 'ציוד ואביזרים',
     image: '/first_car_logo.avif',
-    website: 'https://www.firstcar4x4.com/',
+    website: 'https://firstcar4x4.shop/',
     code: 'SUZUKIFC14',
     discount: '14%',
   },

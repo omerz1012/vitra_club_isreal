@@ -55,7 +55,7 @@ const businesses = [
     type: 'אביזרים לרכב',
     location: 'ברטעה',
     contact: 'עמאר | 054-285-5441',
-    website: 'https://www.firstcar4x4.com',
+    website: 'https://firstcar4x4.shop/',
   },
   {
     name: 'ENL ייבוא ושיווק',
