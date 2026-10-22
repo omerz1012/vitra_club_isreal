@@ -5,6 +5,21 @@ import './FriendsClubPage.css'
 
 const deals = [
   {
+    title: '🚙 אוטו פוינט – 10% הנחה על כל חלקי החילוף באתר',
+    image: '/friend_deal_otopoint.jpeg',
+    code: 'sgv4x4il',
+    description: `🚙 לחברי מועדון SUZUKI GRAND VITARA ISRAEL 4X4
+
+אוטו פוינט מעניקה לכם 10% הנחה על כל חלקי החילוף באתר.
+קוד קופון: sgv4x4il
+מזינים את הקוד בסל ומקבלים את ההנחה מיד.
+
+🛒 https://otopoint.co.il
+
+ההנחה לא חלה על שמני מנוע, שמני גיר ונוזלי קירור.
+ההנחה חלה ברכישה באתר בלבד ולא בחנות`,
+  },
+  {
     title: '☀️🔥 מבצעי קיץ מטורפים לחברי המועדון! 🔥☀️',
     image: '/friend_deal.jpeg',
     description: `חברי SUZUKI GRAND VITARA 4X4 ISRAEL
