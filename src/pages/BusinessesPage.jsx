@@ -129,6 +129,13 @@ const businesses = [
     website: 'https://www.glitz.co.il',
     note: 'כיסוי גלגל ממותג לוגו מועדון - 399 ש"ח | דגל מועדון ממותג כולל מוט - 99 ש"ח',
   },
+  {
+    name: 'אלקטרון ABS',
+    type: 'מעבדת ABS',
+    location: 'מנחם בגין 39, בני ברק',
+    contact: '050-4960603',
+    maps: 'https://www.google.com/maps/search/?api=1&query=%D7%9E%D7%A0%D7%97%D7%9D%20%D7%91%D7%92%D7%99%D7%9F%2039%2C%20%D7%91%D7%A0%D7%99%20%D7%91%D7%A8%D7%A7',
+  },
 ]
 
 const typeColors = {
@@ -141,6 +148,7 @@ const typeColors = {
   'ציוד אביזרים וקמפינג': '#e63946',
   'ייצור חלקים והגבהות': '#f39c12',
   'כיסוי גלגל בעיצוב אישי': '#9b59b6',
+  'מעבדת ABS': '#e84393',
 }
 
 export default function BusinessesPage() {
